@@ -123,7 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //페이지 환경 변화, 로고 클릭 시 최상단으로 이동
-onresize = () => {goToTop();};
+
+onresize = () => {
+    if(window.innerWidth > 768) {goToTop();};
+};
 window.addEventListener('load', goToTop());
 for(i = 0; i < logo.length; i++) {
     logo[i].addEventListener('click',() => {goToTop();});
