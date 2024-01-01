@@ -189,7 +189,8 @@ h4 {font-size: 2.4rem; font-weight: 500;}
 
     
     .header__bg__img {width: 100%;}
-    .header__title {display: flex; flex-flow: column-reverse; position: relative;}
+    .header__title {display: flex; flex-flow: column-reverse; position: relative; width: 90%;}
+    .header__title h1 {font-size: 3.5rem;}
     .header__img {height: 30vh;}
     .btn--scroll-to {position: absolute; bottom: 5rem;}
     
