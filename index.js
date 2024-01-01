@@ -15,10 +15,10 @@ const goToTop = function () {html.scrollIntoView({'behavior': 'smooth'});};
 
 //modal window
 
-window.onbeforeunload = function(){
-    console.log('refresh');
-    revealSection();
-    goToTop();};
+// window.onbeforeunload = function(){
+//     console.log('refresh');
+//     revealSection();
+//     goToTop();};
 
 //로그인 시스템
 document.addEventListener('DOMContentLoaded', () => {
