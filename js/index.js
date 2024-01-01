@@ -11,14 +11,14 @@ const navigator = document.querySelector('.nav');
 const moblieNavigator = document.querySelector('.m__nav');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
-// const goToTop = function () {html.scrollIntoView({'behavior': 'smooth'});};
+const goToTop = function () {html.scrollIntoView({'behavior': 'smooth'});};
 
 //modal window
 
-// window.onbeforeunload = function(){
-//     console.log('refresh');
-//     revealSection();
-//     goToTop();};
+window.onbeforeunload = function(){
+    console.log('refresh');
+    revealSection();
+    goToTop();};
 
 //로그인 시스템
 document.addEventListener('DOMContentLoaded', () => {
@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //페이지 환경 변화, 로고 클릭 시 최상단으로 이동
-// onresize = () => {goToTop();};
-// window.addEventListener('load', goToTop());
+onresize = () => {goToTop();};
+window.addEventListener('load', goToTop());
 for(i = 0; i < logo.length; i++) {
     logo[i].addEventListener('click',() => {goToTop();});
 }
@@ -320,7 +320,7 @@ btnScrollTo.addEventListener('click', function(e) {
     console.log('height / width viewport', document.documentElement.clientHeight, document.documentElement.clientWidth);
     //화면 영역.
 
-    // section1.scrollIntoView({behavior:'smooth'}); // section1 의 위치로 이동.
+    section1.scrollIntoView({behavior:'smooth'}); // section1 의 위치로 이동.
 })
 
 ////////////////////////////page navigation nav 바 이동.
@@ -504,7 +504,7 @@ document.querySelector('.nav__links').addEventListener('click', function(e) {
     if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     console.log(id);
-    // document.querySelector(id).scrollIntoView({behavior:'smooth'});
+    document.querySelector(id).scrollIntoView({behavior:'smooth'});
     
     }
 });
@@ -514,7 +514,7 @@ document.querySelector('.m__nav__links').addEventListener('click', function(e) {
     if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     console.log(id);
-    // document.querySelector(id).scrollIntoView({behavior:'smooth'});
+    document.querySelector(id).scrollIntoView({behavior:'smooth'});
     toggleClose();
     toggleCount++;
     }

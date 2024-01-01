@@ -96,11 +96,11 @@ function signup() {
 
 
   //페이지 환경 변화, 로고 클릭 시 최상단으로 이동
-onresize = () => {goToTop();};
-window.addEventListener('load', goToTop());
-for(i = 0; i < logo.length; i++) {
-    logo[i].addEventListener('click',() => {goToTop();});
-}
+// onresize = () => {goToTop();};
+// window.addEventListener('load', goToTop());
+// for(i = 0; i < logo.length; i++) {
+//     logo[i].addEventListener('click',() => {goToTop();});
+// }
 
 ///menu
 
@@ -119,44 +119,44 @@ const handleHover = function(e) {
     }
 }
 
-// navigator.addEventListener('mouseover', handleHover.bind(0.5))
-// navigator.addEventListener('mouseout', handleHover.bind(1))
+navigator.addEventListener('mouseover', handleHover.bind(0.5))
+navigator.addEventListener('mouseout', handleHover.bind(1))
 
-// //m__mobile__menu
+//m__mobile__menu
 
-// const menuToggle = document.querySelector('.m__menu__toggle'); 
-// const mobileNavBg = document.querySelector('.m__nav'); 
-// const moblieMenu = document.querySelector('.m__nav__links');
-// const moblieMenuToggle = document.querySelector('.m__menu__toggle');
-// const moblieMenuItem = document.querySelectorAll('.m__nav__item');
-// let toggleCount = 0;
-// const toggleOpen = function () {
-//     mobileNavBg.classList.add('m__nav__toggle__bg');
-//     moblieMenu.classList.add('open');
-//     moblieMenuToggle.classList.add('open');
-//     for (let i = 0; i < moblieMenuItem.length; i++) {
-//         moblieMenuItem[i].classList.add('open')
-//     };
-//     console.log('open');
-// };
-// const toggleClose = function () {
-//     mobileNavBg.classList.remove('m__nav__toggle__bg');
-//     moblieMenu.classList.remove('open');
-//     moblieMenuToggle.classList.remove('open');
-//     for (let i = 0; i < moblieMenuItem.length; i++) {
-//         moblieMenuItem[i].classList.remove('open')
-//     };
-//     console.log('close');
-// };
+const menuToggle = document.querySelector('.m__menu__toggle'); 
+const mobileNavBg = document.querySelector('.m__nav'); 
+const moblieMenu = document.querySelector('.m__nav__links');
+const moblieMenuToggle = document.querySelector('.m__menu__toggle');
+const moblieMenuItem = document.querySelectorAll('.m__nav__item');
+let toggleCount = 0;
+const toggleOpen = function () {
+    mobileNavBg.classList.add('m__nav__toggle__bg');
+    moblieMenu.classList.add('open');
+    moblieMenuToggle.classList.add('open');
+    for (let i = 0; i < moblieMenuItem.length; i++) {
+        moblieMenuItem[i].classList.add('open')
+    };
+    console.log('open');
+};
+const toggleClose = function () {
+    mobileNavBg.classList.remove('m__nav__toggle__bg');
+    moblieMenu.classList.remove('open');
+    moblieMenuToggle.classList.remove('open');
+    for (let i = 0; i < moblieMenuItem.length; i++) {
+        moblieMenuItem[i].classList.remove('open')
+    };
+    console.log('close');
+};
 
-// menuToggle.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     console.log(moblieMenuItem)
-//     if(toggleCount % 2 == 0) {
-//         toggleOpen();
-//     } else if (toggleCount % 2 == 1) {
-//         toggleClose();
-//     };
-//     toggleCount++;
-//     console.log(toggleCount);
-// });
+menuToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log(moblieMenuItem)
+    if(toggleCount % 2 == 0) {
+        toggleOpen();
+    } else if (toggleCount % 2 == 1) {
+        toggleClose();
+    };
+    toggleCount++;
+    console.log(toggleCount);
+});
