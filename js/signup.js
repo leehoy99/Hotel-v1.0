@@ -97,10 +97,10 @@ function signup() {
 
   //페이지 환경 변화, 로고 클릭 시 최상단으로 이동
 // onresize = () => {goToTop();};
-// window.addEventListener('load', goToTop());
-// for(i = 0; i < logo.length; i++) {
-//     logo[i].addEventListener('click',() => {goToTop();});
-// }
+window.addEventListener('load', goToTop());
+for(i = 0; i < logo.length; i++) {
+    logo[i].addEventListener('click',() => {goToTop();});
+}
 
 ///menu
 
