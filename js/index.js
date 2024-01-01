@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contentDiv.innerHTML = `
       <h1>The reservation service requires a login.</h1>
       <h2>Don't you have an account?</h2>
-      <a href="signup.html" id="footer--modal" class="btn btn--show-modal">Account Show sing up</a>
+      <a href="signup.html" id="footer--modal" class="btn btn--show-modal">Creat Account</a>
       `
     }
   });

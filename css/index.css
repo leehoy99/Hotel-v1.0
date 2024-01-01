@@ -3,7 +3,7 @@
 *{margin: 0; padding: 0; box-sizing: inherit;}
 
 html {font-size: 62.5%; box-sizing: border-box;}
-body {font-family: 'Poppins', sans-serif; font-weight: 300; color: #444; line-height: 1.9; background-color: #f3f3f3; overflow-x: hidden;}
+body {font-family: 'Poppins', sans-serif; font-weight: 300; color: #444;line-height: 1.9; background-color: #f3f3f3; overflow-x: hidden;}
 
 /* 전체 css */
 
@@ -134,11 +134,11 @@ h4 {font-size: 2.4rem; font-weight: 500;}
 .section__title--testimonials {margin-bottom: 4rem;}
 
 /* section4 */
-#section--4 {position: relative; overflow: hidden; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.section__4 {position: relative; overflow: hidden; height: 100vh; display: flex; justify-content: center; align-items: center;}
 .section__box{ width: 60%; height: fit-content; background-color: rgba(255, 255, 255, 0.8); z-index: 1; padding: 10rem 0 10rem 0;}
 #contentDiv {width: 100%; height: fit-content; display: flex; align-items: center; justify-content: center; flex-flow: column; gap: 5rem;}
 #contentDiv h1 {font-size: 3rem; text-align: center;}
-#contentDiv a {text-decoration: none; color: inherit; z-index: 1;} 
+#contentDiv a {text-decoration: none; color: inherit; text-align: center; z-index: 1;} 
 
 .section__video {position: absolute; transform: scale(1.3); object-fit: cover; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; filter: blur(10px);}
 
@@ -178,7 +178,7 @@ h4 {font-size: 2.4rem; font-weight: 500;}
 @media screen and (max-width: 1024px) {
     .services {display: none;}
     .m__services {display: flex; margin: 0 8rem;}
-
+    .section__4 {height: 150rem; overflow: hidden;}
     .section__box{ width: 60%; height: fit-content; background-color: rgba(255, 255, 255, 0.8); z-index: 1; padding: 10rem 5rem 10rem 5rem;}
 
 }
@@ -198,16 +198,19 @@ h4 {font-size: 2.4rem; font-weight: 500;}
     
     .operations__header {font-size: 2.25rem; font-weight: 500; width: 90%;}
     .operations__paragraph {width: 90%;}
+    .operations__tab {width: 3rem; padding: 3rem 0 3rem 0;}
+    .operations__tab--active { width: 20rem; padding: 3rem}
     
-    .slider {max-width: 100rem; height: 70rem; margin: 0 auto; position: relative; }
+    
+    .slider {max-width: 100rem; height: 80rem; margin: 0 auto; position: relative; }
     .slider__btn {width: 4.5rem; height: 4.5rem; font-size: 2.75rem;}
 
     .testimonial {width: 80%;}
     .testimonial__text {height: 40rem; overflow-y: scroll;}
     .testimonial::before {display: none};
 
-    #section--4 {height: calc(100vh - 51px); overflow: hidden;}
-    #section--4 .section__box {width: 90%; padding: 10rem 5rem 10rem 5rem;}
+    .section__4 {overflow: hidden;}
+    .section__4 .section__box {width: 90%; padding: 10rem 5rem 10rem 5rem;}
 
     .footer__nav {flex-flow: column;}
 }
