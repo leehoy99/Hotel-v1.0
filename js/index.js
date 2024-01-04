@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileLoginButton.style.display = 'none';
       contentDiv.innerHTML = `
       <h1>Hello, ${user.name}! Please go to the link below to make a reservation.</h1>
-      <a href="https://booking.pension.onda.me/104372/calendar" id="footer--modal" class="btn btn--show-modal">Reservation page</a>
+      <a href="https://booking.pension.onda.me/104372/calendar" target="_blank" id="footer--modal" class="btn btn--show-modal">Reservation page</a>
       `;
     } else {
       loginForm.style.display = 'flex';
