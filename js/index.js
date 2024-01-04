@@ -1,14 +1,14 @@
 const html = document.querySelector('html');
-const logo = document.querySelectorAll('.nav__logo');
+const logo = document.querySelectorAll('.nav-logo');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
-const tabs = document.querySelectorAll('.operations__tab');
-const tabsContainer = document.querySelector('.operations__tab-container');
-const tabsContent = document.querySelectorAll('.operations__content');
+const tabs = document.querySelectorAll('.operations-tab');
+const tabsContainer = document.querySelector('.operations-tab-container');
+const tabsContent = document.querySelectorAll('.operations-content');
 const navigator = document.querySelector('.nav');
-const moblieNavigator = document.querySelector('.m__nav');
+const moblieNavigator = document.querySelector('.m-nav');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 const goToTop = function () {html.scrollIntoView({'behavior': 'smooth'});};
@@ -19,6 +19,8 @@ window.onbeforeunload = function(){
     console.log('refresh');
     revealSection();
     goToTop();};
+
+
 
 //로그인 시스템
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,21 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (user) {
       loginForm.style.display = 'none';
       modalButton.style.display = 'none';
-      logoutButton.style.display = 'none';
-      loginButton.style.display = 'block';
-      mobileLogoutButton.style.display = 'none';
-      mobileLoginButton.style.display = 'block';
+      logoutButton.style.display = 'block';
+      loginButton.style.display = 'none';
+      mobileLogoutButton.style.display = 'block';
+      mobileLoginButton.style.display = 'none';
       contentDiv.innerHTML = `
       <h1>Hello, ${user.name}! Please go to the link below to make a reservation.</h1>
       <a href="https://booking.pension.onda.me/104372/calendar" id="footer--modal" class="btn btn--show-modal">Reservation page</a>
       `;
     } else {
-      loginForm.style.display = 'block';
+      loginForm.style.display = 'flex';
       modalButton.style.display = 'inline-block';
-      logoutButton.style.display = 'block';
-      loginButton.style.display = 'none';
-      mobileLogoutButton.style.display = 'block';
-      mobileLoginButton.style.display = 'none';
+      logoutButton.style.display = 'none';
+      loginButton.style.display = 'block';
+      mobileLogoutButton.style.display = 'none';
+      mobileLoginButton.style.display = 'block';
       contentDiv.innerHTML = `
       <h1>The reservation service requires a login.</h1>
       <h2>Don't you have an account?</h2>
@@ -56,20 +58,28 @@ document.addEventListener('DOMContentLoaded', () => {
       `
     }
   });
-  function togglePasswordVisibility() {
-    const passwordInput = document.getElementById('password');
-    const passwordVisibilityButton = document.getElementById('password-visibility-button');
+  
+  const visibleBtn = document.getElementById('password-visibility-button')
+  visibleBtn.addEventListener('click', function() {
 
-    // 입력된 비밀번호의 가시성을 토글
+    const passwordInput = document.getElementById('password');
+
     if (passwordInput.type === 'password') {
-      passwordInput.type = 'password';
-      passwordVisibilityButton.textContent = 'Show Password';
+        passwordInput.type = 'text';
+        passwordInput.removeAttribute('required');
+        this.textContent = 'Hide Password';
+        console.log(passwordInput.type);
     } else {
-      passwordInput.type = 'text';
-      passwordVisibilityButton.textContent = 'Hide Password';
+        passwordInput.type = 'password';
+        passwordInput.setAttribute('required', 'required');
+        this.textContent = 'Show Password';
+        console.log(passwordInput.type);
     }
-  };
-  togglePasswordVisibility();
+});
+
+
+
+  
 
   function login() {
     const IDInput = document.getElementById('ID');
@@ -162,8 +172,8 @@ document.addEventListener('keydown', function(e){
 
 tabsContainer.addEventListener('click',function(e){
     // const clicked = e.target;
-    //=> 숫자도 같이올라감 operations__tab 안의 span 요소도 작동해버림.
-    const clicked = e.target.closest('.operations__tab'); 
+    //=> 숫자도 같이올라감 operations-tab 안의 span 요소도 작동해버림.
+    const clicked = e.target.closest('.operations-tab'); 
     // e.target 은 현재상황에서 span과 tab 으로 나눠져있는데, 이걸 tab 하나로 합쳐서 인식되게 closest 메서드 사용해서 tab으로 향하게끔.
     console.log(clicked.children)
 
@@ -171,22 +181,22 @@ tabsContainer.addEventListener('click',function(e){
     //clicked 값은 tab인데, tab이 아닌데가 클릭 되면 오류화면을 출력안하게끔.
     //하나 안하나 null 값은 그대로 나옴.
 
-    tabs.forEach(t=>t.classList.remove('operations__tab--active'));
-    tabsContent.forEach(c => c.classList.remove('operations__content--active'));
+    tabs.forEach(t=>t.classList.remove('operations-tab--active'));
+    tabsContent.forEach(c => c.classList.remove('operations-content--active'));
     //foreach 로 돌려서 tab이나 tabsContent 의 active 값 모두 삭제
 
-    clicked.classList.add('operations__tab--active');
+    clicked.classList.add('operations-tab--active');
     //특정 탭이 클릭되었을때 active를 클래스에 추가.
-    document.querySelector(`.operations__content--${clicked.dataset.tab}`).classList.add('operations__content--active')
+    document.querySelector(`.operations-content--${clicked.dataset.tab}`).classList.add('operations-content--active')
     //쿼리셀렉터로 오퍼레이션 내용의 콘텐츠를 가지고 오려 함. 여기서 몇번을 가져올지는 clicked 의 dataset 번호로 가져옴. data-tab은 각각 1,2,3 으로 이루어져 있음. 
 })
 
 ///menu
 
 const handleHover = function(e) {
-    if(e.target.classList.contains('nav__link')){
+    if(e.target.classList.contains('nav-link')){
         const link = e.target; //마우스 호버든 어떤 이벤트의 타겟이 된 <a></a>요소
-        const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+        const siblings = link.closest('.nav').querySelectorAll('.nav-link');
 
         siblings.forEach(el => {
             if(el !== link) {
@@ -211,8 +221,8 @@ navigator.addEventListener('mouseout', handleHover.bind(1))
 //////////////////////////////////////////////slide
 
 const slides = document.querySelectorAll('.slide');
-const btnLeft = document.querySelector('.slider__btn--left')
-const btnRight = document.querySelector('.slider__btn--right')
+const btnLeft = document.querySelector('.slider-btn--left')
+const btnRight = document.querySelector('.slider-btn--right')
 const dotContainer = document.querySelector('.dots');
 const slider = document.querySelector('.slider');
 
@@ -231,7 +241,7 @@ slides.forEach((s, i) => (
 //버튼 추가하기
 const createDots = function() {
     slides.forEach(function(_,i){
-        dotContainer.insertAdjacentHTML('beforeend', `<button class="dots__dot" data-slide="${i}"></button>`)
+        dotContainer.insertAdjacentHTML('beforeend', `<button class="dots-dot" data-slide="${i}"></button>`)
     })
 }
 
@@ -239,16 +249,16 @@ createDots();
 
 //버튼 색 바꿔주기.
 const activateDot = function(slide) {
-    document.querySelectorAll('.dots__dot').forEach(dots => dots.classList.remove('dots__dot--active'))
+    document.querySelectorAll('.dots-dot').forEach(dots => dots.classList.remove('dots-dot--active'))
 
-    document.querySelector(`.dots__dot[data-slide = '${slide}'`).classList.add('dots__dot--active');
+    document.querySelector(`.dots-dot[data-slide = '${slide}'`).classList.add('dots-dot--active');
 };
 
 activateDot(0);
 
 //버튼 색 바뀌는 위치 지정
 dotContainer.addEventListener('click',function(e) {
-    if (e.target.classList.contains('dots__dot')) {
+    if (e.target.classList.contains('dots-dot')) {
         console.log('dot');
         const {slide} = e.target.dataset;
         console.log(slide);
@@ -328,7 +338,7 @@ btnScrollTo.addEventListener('click', function(e) {
 
 ////////////////////////////page navigation nav 바 이동.
 
-// document.querySelectorAll('.nav__link').forEach(function (el) {
+// document.querySelectorAll('.nav-link').forEach(function (el) {
 //     el.addEventListener('click', function(e){
 //         e.preventDefault;
 //         const id = this.getAttribute('href');
@@ -337,8 +347,8 @@ btnScrollTo.addEventListener('click', function(e) {
 // })
 
 
-//직접 nav__link 의 위치 받아오기
-// document.querySelectorAll('.nav__link').forEach(function (el) {
+//직접 nav-link 의 위치 받아오기
+// document.querySelectorAll('.nav-link').forEach(function (el) {
 //     el.addEventListener('click', function(e) {
 //         e.preventDefault();
 //         const id = this.getAttribute('href');
@@ -357,9 +367,9 @@ const stickyNav = function(entries) {
     const [entry] = entries;//디스트럭쳐 할당해서 함수 잘 돌아가게. 사실상 해당 기능에서 기본값으로 들어간다고 보면 됨
     console.log(entry) //IntersectionObserver의 모든 값들.
     if (!entry.isIntersecting) navigator.classList.add('sticky');
-    if (!entry.isIntersecting) moblieNavigator.classList.add('m__nav__bg');
+    if (!entry.isIntersecting) moblieNavigator.classList.add('m-nav-bg');
     entry.isIntersecting && navigator.classList.remove('sticky');
-    entry.isIntersecting && moblieNavigator.classList.remove('m__nav__bg');
+    entry.isIntersecting && moblieNavigator.classList.remove('m-nav-bg');
 }
 
 const headerObserver = new IntersectionObserver(stickyNav, {
@@ -373,7 +383,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header); //=> 헤더 영역으로 가면 isIntersecting : true 값 
 
 ////////////////////////header-bg-img-slide
-const headerImg = document.querySelectorAll('.header__bg__img img')
+const headerImg = document.querySelectorAll('.header-bg-img img')
 
 function slideShow() {
     let curIndex = 1;
@@ -461,16 +471,16 @@ allSection.forEach(function(section){
 //sectionObserve 실행하면 도감에 reveal section 실행.
 //revealsection 에서는 위치에 오는 함수마다 hidden 클래스 없애고, 한번 observe 했으면 더이상 하지 않음.
 
-//m__mobile__menu
+//m-mobile-menu
 
-const menuToggle = document.querySelector('.m__menu__toggle'); 
-const mobileNavBg = document.querySelector('.m__nav'); 
-const moblieMenu = document.querySelector('.m__nav__links');
-const moblieMenuToggle = document.querySelector('.m__menu__toggle');
-const moblieMenuItem = document.querySelectorAll('.m__nav__item');
+const menuToggle = document.querySelector('.m-menu-toggle'); 
+const mobileNavBg = document.querySelector('.m-nav'); 
+const moblieMenu = document.querySelector('.m-nav-links');
+const moblieMenuToggle = document.querySelector('.m-menu-toggle');
+const moblieMenuItem = document.querySelectorAll('.m-nav-item');
 let toggleCount = 0;
 const toggleOpen = function () {
-    mobileNavBg.classList.add('m__nav__toggle__bg');
+    mobileNavBg.classList.add('m-nav-toggle-bg');
     moblieMenu.classList.add('open');
     moblieMenuToggle.classList.add('open');
     for (let i = 0; i < moblieMenuItem.length; i++) {
@@ -479,7 +489,7 @@ const toggleOpen = function () {
     console.log('open');
 };
 const toggleClose = function () {
-    mobileNavBg.classList.remove('m__nav__toggle__bg');
+    mobileNavBg.classList.remove('m-nav-toggle-bg');
     moblieMenu.classList.remove('open');
     moblieMenuToggle.classList.remove('open');
     for (let i = 0; i < moblieMenuItem.length; i++) {
@@ -501,20 +511,20 @@ menuToggle.addEventListener('click', function(e) {
 });
 
 //nav 전체단위에서 클릭한 개체의 위치 받아오기. forEach 사용 안함. 클릭하면 해당위치로 이동.
-document.querySelector('.nav__links').addEventListener('click', function(e) {
+document.querySelector('.nav-links').addEventListener('click', function(e) {
     e.preventDefault();
 
-    if (e.target.classList.contains('nav__link')) {
+    if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
     console.log(id);
     document.querySelector(id).scrollIntoView({behavior:'smooth'});
     
     }
 });
-document.querySelector('.m__nav__links').addEventListener('click', function(e) {
+document.querySelector('.m-nav-links').addEventListener('click', function(e) {
     e.preventDefault();
 
-    if (e.target.classList.contains('nav__link')) {
+    if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
     console.log(id);
     document.querySelector(id).scrollIntoView({behavior:'smooth'});

@@ -1,14 +1,14 @@
 const html = document.querySelector('html');
-const logo = document.querySelectorAll('.nav__logo');
+const logo = document.querySelectorAll('.nav-logo');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
-const tabs = document.querySelectorAll('.operations__tab');
-const tabsContainer = document.querySelector('.operations__tab-container');
-const tabsContent = document.querySelectorAll('.operations__content');
+const tabs = document.querySelectorAll('.operations-tab');
+const tabsContainer = document.querySelector('.operations-tab-container');
+const tabsContent = document.querySelectorAll('.operations-content');
 const navigator = document.querySelector('.nav');
-const moblieNavigator = document.querySelector('.m__nav');
+const moblieNavigator = document.querySelector('.m-nav');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
 const goToTop = function () {html.scrollIntoView({'behavior': 'smooth'});};
@@ -101,15 +101,15 @@ function signup() {
 };
 window.addEventListener('load', goToTop());
 for(i = 0; i < logo.length; i++) {
-    logo[i].addEventListener('click',() => {goToTop();});
+    logo[i].addEventListener('click',() => {location.href="index.html";});
 }
 
 ///menu
 
 const handleHover = function(e) {
-    if(e.target.classList.contains('nav__link')){
+    if(e.target.classList.contains('nav-link')){
         const link = e.target; //마우스 호버든 어떤 이벤트의 타겟이 된 <a></a>요소
-        const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+        const siblings = link.closest('.nav').querySelectorAll('.nav-link');
         const logo = link.closest('.nav').querySelector('img');
 
         siblings.forEach(el => {
@@ -124,16 +124,16 @@ const handleHover = function(e) {
 navigator.addEventListener('mouseover', handleHover.bind(0.5))
 navigator.addEventListener('mouseout', handleHover.bind(1))
 
-//m__mobile__menu
+//m-mobile-menu
 
-const menuToggle = document.querySelector('.m__menu__toggle'); 
-const mobileNavBg = document.querySelector('.m__nav'); 
-const moblieMenu = document.querySelector('.m__nav__links');
-const moblieMenuToggle = document.querySelector('.m__menu__toggle');
-const moblieMenuItem = document.querySelectorAll('.m__nav__item');
+const menuToggle = document.querySelector('.m-menu-toggle'); 
+const mobileNavBg = document.querySelector('.m-nav'); 
+const moblieMenu = document.querySelector('.m-nav-links');
+const moblieMenuToggle = document.querySelector('.m-menu-toggle');
+const moblieMenuItem = document.querySelectorAll('.m-nav-item');
 let toggleCount = 0;
 const toggleOpen = function () {
-    mobileNavBg.classList.add('m__nav__toggle__bg');
+    mobileNavBg.classList.add('m-nav-toggle-bg');
     moblieMenu.classList.add('open');
     moblieMenuToggle.classList.add('open');
     for (let i = 0; i < moblieMenuItem.length; i++) {
@@ -142,7 +142,7 @@ const toggleOpen = function () {
     console.log('open');
 };
 const toggleClose = function () {
-    mobileNavBg.classList.remove('m__nav__toggle__bg');
+    mobileNavBg.classList.remove('m-nav-toggle-bg');
     moblieMenu.classList.remove('open');
     moblieMenuToggle.classList.remove('open');
     for (let i = 0; i < moblieMenuItem.length; i++) {
