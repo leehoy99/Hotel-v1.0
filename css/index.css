@@ -243,5 +243,6 @@ h4 {font-size: 2.4rem; font-weight: 500;}
     .modal {width: 30rem; padding: 5rem 2rem;}
     .modal-header {display: none;}
     .modal-form input {width: 100%; font-size: 1.6rem; padding: 0.5rem 1.0rem;}
+    .modal-form > button, .modal-form > a {font-size: 1.5rem; width: 100%;}
     .modal-form > button {font-size: 1.5rem; width: 100%;}
 }
