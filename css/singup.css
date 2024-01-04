@@ -78,13 +78,16 @@ img {transition: filter .5s;}
 #signup-form input {font-size: 1.7rem; padding: 1rem 1.5rem; border: 1px solid #ddd; border-radius: 0.5rem;}
 #signup-form button {justify-self: center; margin-top: 1rem; width: 20rem;}
 
-/* signup */
+/* about */
 
-.section--sign-up {background-color: #37383d; border-top: none; border-bottom: 1px solid #444; text-align: center; padding: 10rem 3rem; }
-.section--sign-up .section-header {color: #fff; text-align: center;}
-.section--sign-up .section-title {margin-bottom: 6rem;}
-.section--sign-up .btn {font-size: 1.9rem; padding: 2rem 5rem; }
-
+.section--about {background-color: #37383d; border-top: none; border-bottom: 1px solid #444; text-align: center; padding: 10rem 3rem; }
+.section--about .section-title {margin-bottom: 6rem;}
+.section--about .section-header {color: #fff; text-align: center; margin-bottom: 5rem;}
+.section--about .about-img {height: 50rem;}
+.section--about .about-img svg {fill: var(--color-primary); height: 100%; width: 100%;}
+.section-sub {font-size: 2.5rem; color: var(--color-primary-darker);}
+.section--about h2 {font-size: 3rem; margin-bottom: 5rem;}
+.section--about .btn {font-size: 1.9rem; padding: 2rem 5rem; }
 /* footer */
 
 .footer {padding: 10rem 3rem; background-color: #37383d;}
