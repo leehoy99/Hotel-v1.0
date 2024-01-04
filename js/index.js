@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileLogoutButton = document.getElementById('m-logout-button');
     const mobileLoginButton = document.getElementById('m-login-button');
     const modalButton = document.getElementById('footer--modal');
+    const aboutPara = document.getElementById('about-paragraph');
     const contentDiv = document.getElementById('contentDiv');
 
     if (user) {
       loginForm.style.display = 'none';
       modalButton.style.display = 'none';
+      aboutPara.style.display = 'none';
       logoutButton.style.display = 'block';
       loginButton.style.display = 'none';
       mobileLogoutButton.style.display = 'block';
@@ -47,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       loginForm.style.display = 'flex';
       modalButton.style.display = 'inline-block';
+      aboutPara.style.display = 'block';
       logoutButton.style.display = 'none';
       loginButton.style.display = 'block';
       mobileLogoutButton.style.display = 'none';
