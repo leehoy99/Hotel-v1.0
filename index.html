@@ -15,7 +15,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" width="102" height="41.993" viewBox="0 0 102 41.993">
+            <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" width="102" height="41.993" viewBox="0 0 102 41.993">
                 <path d="M776.641,981.709v-4.279a1.721,1.721,0,1,0-3.433,0v4.279h-1.014v-6.947h1.014v.764a2.5,2.5,0,0,1,1.948-.846,2.46,2.46,0,0,1,1.778.644,2.554,2.554,0,0,1,.72,1.936v4.449Z" transform="translate(-738.782 -941.715)"></path>
                 <path d="M782.132,972.308v-1.141h1.147v1.141Zm.047,8.922v-6.947h1.02v6.947Z" transform="translate(-740.138 -941.236)"></path>
                 <path d="M791.594,981.709v-4.279a1.722,1.722,0,1,0-3.436,0v4.279h-1.011v-6.947h1.011v.764a2.508,2.508,0,0,1,1.953-.846,2.442,2.442,0,0,1,1.775.644,2.574,2.574,0,0,1,.722,1.936v4.449Z" transform="translate(-740.822 -941.715)"></path>
@@ -28,17 +28,17 @@
                 <path d="M781.3,946.9a16.683,16.683,0,0,0-3.115.25v-8.322h-5.99v24.927h5.99V956c0-1.643.194-2.275.607-2.611a6.5,6.5,0,0,1,5.011,0c.422.336.616.967.616,2.611v7.753H790.4V956C790.4,949.45,787.852,946.9,781.3,946.9Z" transform="translate(-738.782 -936.824)"></path>
                 <path d="M761.421,946.457a17.742,17.742,0,0,0-.342-1.958,9.266,9.266,0,0,0-7.437-7.434,33.342,33.342,0,0,0-12.147,0,9.286,9.286,0,0,0-7.432,7.434,33.373,33.373,0,0,0,0,12.152,9.263,9.263,0,0,0,7.432,7.424,32.9,32.9,0,0,0,12.147,0,12.751,12.751,0,0,0,1.562-.468c.009.268.015.54.015.831,0,6.105-1.531,7.643-7.649,7.643-3.566,0-5.261-.383-6.291-1.368a7.876,7.876,0,0,1-.835-.928l-5.475,3.785a9.2,9.2,0,0,0,1.508,1.855,10.51,10.51,0,0,0,5.018,2.531,27.021,27.021,0,0,0,6.075.543,26.042,26.042,0,0,0,6.072-.563,9.252,9.252,0,0,0,7.437-7.429,17.657,17.657,0,0,0,.342-1.959,125.725,125.725,0,0,0,0-22.093ZM755.2,951.4c-.09,3.4-.781,5.221-2.732,6.1a12.151,12.151,0,0,1-4.9.721c-6.116,0-7.647-1.535-7.647-7.646s1.531-7.652,7.647-7.652,7.649,1.533,7.649,7.652C755.219,950.861,755.213,951.141,755.2,951.4Z" transform="translate(-733.505 -936.508)"></path>
             </svg>
-            <ul class="nav__links">
-                <li class="nav__item"><a class="nav__link" href="#section--1">Service</a></li>
-                <li class="nav__item"><a class="nav__link" href="#section--2">Locations</a></li>
-                <li class="nav__item"><a class="nav__link" href="#section--3">Review</a></li>
-                <li class="nav__item"><a class="nav__link" href="#section--4">Reservation</a></li>
-                <li class="nav__item"><a id="logout-button" class="nav__link nav__link--btn btn--show-modal" href="#">Login</a></li>
-                <li class="nav__item"><a id="login-button" class="nav__link nav__link--btn btn--show-modal" onclick="logout()" href="#">Logout</a></li>
+            <ul class="nav-links">
+                <li class="nav-item"><a class="nav-link" href="#section--1">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section--2">Locations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section--3">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section--4">Reservation</a></li>
+                <li class="nav-item"><button id="login-button" class="nav-link nav-link--btn btn--show-modal">Login</button></li>
+                <li class="nav-item"><button id="logout-button" class="nav-link nav-link--btn btn--show-modal" onclick="logout()">Logout</button></li>
             </ul>
         </nav>
-        <nav class="m__nav">
-            <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" width="102" height="41.993" viewBox="0 0 102 41.993">
+        <nav class="m-nav">
+            <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" width="102" height="41.993" viewBox="0 0 102 41.993">
                 <path d="M776.641,981.709v-4.279a1.721,1.721,0,1,0-3.433,0v4.279h-1.014v-6.947h1.014v.764a2.5,2.5,0,0,1,1.948-.846,2.46,2.46,0,0,1,1.778.644,2.554,2.554,0,0,1,.72,1.936v4.449Z" transform="translate(-738.782 -941.715)"></path>
                 <path d="M782.132,972.308v-1.141h1.147v1.141Zm.047,8.922v-6.947h1.02v6.947Z" transform="translate(-740.138 -941.236)"></path>
                 <path d="M791.594,981.709v-4.279a1.722,1.722,0,1,0-3.436,0v4.279h-1.011v-6.947h1.011v.764a2.508,2.508,0,0,1,1.953-.846,2.442,2.442,0,0,1,1.775.644,2.574,2.574,0,0,1,.722,1.936v4.449Z" transform="translate(-740.822 -941.715)"></path>
@@ -51,122 +51,125 @@
                 <path d="M781.3,946.9a16.683,16.683,0,0,0-3.115.25v-8.322h-5.99v24.927h5.99V956c0-1.643.194-2.275.607-2.611a6.5,6.5,0,0,1,5.011,0c.422.336.616.967.616,2.611v7.753H790.4V956C790.4,949.45,787.852,946.9,781.3,946.9Z" transform="translate(-738.782 -936.824)"></path>
                 <path d="M761.421,946.457a17.742,17.742,0,0,0-.342-1.958,9.266,9.266,0,0,0-7.437-7.434,33.342,33.342,0,0,0-12.147,0,9.286,9.286,0,0,0-7.432,7.434,33.373,33.373,0,0,0,0,12.152,9.263,9.263,0,0,0,7.432,7.424,32.9,32.9,0,0,0,12.147,0,12.751,12.751,0,0,0,1.562-.468c.009.268.015.54.015.831,0,6.105-1.531,7.643-7.649,7.643-3.566,0-5.261-.383-6.291-1.368a7.876,7.876,0,0,1-.835-.928l-5.475,3.785a9.2,9.2,0,0,0,1.508,1.855,10.51,10.51,0,0,0,5.018,2.531,27.021,27.021,0,0,0,6.075.543,26.042,26.042,0,0,0,6.072-.563,9.252,9.252,0,0,0,7.437-7.429,17.657,17.657,0,0,0,.342-1.959,125.725,125.725,0,0,0,0-22.093ZM755.2,951.4c-.09,3.4-.781,5.221-2.732,6.1a12.151,12.151,0,0,1-4.9.721c-6.116,0-7.647-1.535-7.647-7.646s1.531-7.652,7.647-7.652,7.649,1.533,7.649,7.652C755.219,950.861,755.213,951.141,755.2,951.4Z" transform="translate(-733.505 -936.508)"></path>
             </svg>
-            <div class="login__btn">
-                <a id="m-logout-button" class="nav__link nav__link--btn btn--show-modal" href="#">Login</a>
-                <a id="m-login-button" class="nav__link nav__link--btn btn--show-modal" onclick="logout()" href="#">Logout</a>
+            <div class="m-login-btn">
+                <button id="m-login-button" class="nav-link nav-link--btn btn--show-modal">Login</button>
+                <button id="m-logout-button" class="nav-link nav-link--btn btn--show-modal" onclick="logout()">Logout</button>
             </div>
-            <a class="m__menu__toggle btn nav__link--btn">
-                <p>&rarr;</p>
+            <a class="m-menu-toggle btn nav-link--btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+                </svg>
             </a>
-            <ul class="nav__links m__nav__links">
-                <li class="nav__item m__nav__item"><a class="nav__link" href="#section--1">Service</a></li>
-                <li class="nav__item m__nav__item"><a class="nav__link" href="#section--2">Locations</a></li>
-                <li class="nav__item m__nav__item"><a class="nav__link" href="#section--3">Review</a></li>
-                <li class="nav__item m__nav__item"><a class="nav__link" href="#section--4">Reservation</a></li>
+            <ul class="nav-links m-nav-links">
+                <li class="nav-item m-nav-item"><a class="nav-link" href="#section--1">Service</a></li>
+                <li class="nav-item m-nav-item"><a class="nav-link" href="#section--2">Locations</a></li>
+                <li class="nav-item m-nav-item"><a class="nav-link" href="#section--3">Review</a></li>
+                <li class="nav-item m-nav-item"><a class="nav-link" href="#section--4">Reservation</a></li>
             </ul>
         </nav>
-        <div class="header__bg__img">
-            <img src="images/slider05.jpg" class="header__bg__img__initial" style="opacity: 1;" alt="">
-            <img src="images/slider01.jpg" class="header__bg__img__1 fade" alt="">
-            <img src="images/slider02.jpg" class="header__bg__img__2 " alt="">
-            <img src="images/slider03.jpg" class="header__bg__img__3 " alt="">
-            <img src="images/slider04.jpg" class="header__bg__img__4 " alt="">
-            <img src="images/slider05.jpg" class="header__bg__img__5 " alt="">
+        <div class="header-bg-img">
+            <img src="images/slider05.jpg" class="header-bg-img-initial" style="opacity: 1;" alt="">
+            <img src="images/slider01.jpg" class="header-bg-img-1 fade" alt="">
+            <img src="images/slider02.jpg" class="header-bg-img-2 " alt="">
+            <img src="images/slider03.jpg" class="header-bg-img-3 " alt="">
+            <img src="images/slider04.jpg" class="header-bg-img-4 " alt="">
+            <img src="images/slider05.jpg" class="header-bg-img-5 " alt="">
         </div>
-        <div class="header__title">
+        <div class="header-title">
             <h1>
-                When<span class="highlight">Your</span>Story<br />
-                <span class="highlight">is told</span>
+                <span class="highlight">Showering,</span>
+                    <br />Sleeping, <span class="highlight">and </span>
+                    <br />Changing clothes.
             </h1>
             <h4>The world is resonated with you</h4>
             <button class="btn--text btn--scroll-to">Explore more &DownArrow;</button>
-            <svg xmlns="http://www.w3.org/2000/svg" class="header__img" 13" width="259.899" height="106.775" viewBox="0 0 259.899 106.775">
-                <path  d="M58.422,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H47.2v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(37.765 37.374)" fill="#"/>
-                <path  d="M57.1,43.2h2.861v2.861H57.1Zm.22,7.922h2.641v17.6H57.32Z" transform="translate(49.65 33.184)" fill="#"/>
-                <path  d="M73.542,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H62.1v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(55.652 37.374)" fill="#"/>
-                <path  d="M74.041,56.382c0,3.961,1.76,6.161,5.281,6.161a5.721,5.721,0,0,0,4.4-1.98l1.76,1.54A8.142,8.142,0,0,1,79.1,64.744c-4.621,0-7.7-2.861-7.7-9.022S74.261,46.7,78.661,46.7s7.261,3.3,7.261,8.582v1.1Zm8.8-4.841a4.621,4.621,0,0,0-8.142,0,7.042,7.042,0,0,0-.66,2.861H83.5a7.261,7.261,0,0,0-.44-2.861" transform="translate(66.816 37.386)" fill="#"/>
-                <path  d="M96.342,68.725v-11a4.416,4.416,0,1,0-8.8,0v11H84.9V43.2h2.641v9.9A6.381,6.381,0,0,1,92.6,50.9a5.941,5.941,0,0,1,6.381,6.6V68.945Z" transform="translate(83.022 33.184)" fill="#"/>
-                <path  d="M106.547,62.758a7.481,7.481,0,0,1-10.122,0,9.462,9.462,0,0,1-2.2-7.041,9.462,9.462,0,0,1,2.2-7.041,7.481,7.481,0,0,1,10.122,0,9.462,9.462,0,0,1,2.2,7.041,9.462,9.462,0,0,1-2.2,7.041m-1.76-12.542a4.512,4.512,0,0,0-6.381,0,7.7,7.7,0,0,0-1.54,5.5,7.7,7.7,0,0,0,1.54,5.5,4.512,4.512,0,0,0,6.381,0,7.7,7.7,0,0,0,1.32-5.5,7.7,7.7,0,0,0-1.32-5.5" transform="translate(94.161 37.391)" fill="#"/>
-                <path  d="M114.755,64.4v-1.98a7.261,7.261,0,0,1-9.682.66,6.6,6.6,0,0,1-1.76-5.061V46.8h2.641v11c0,3.081,1.54,4.621,4.181,4.621a4.181,4.181,0,0,0,4.4-4.621v-11h2.641V64.4Z" transform="translate(105.097 37.506)" fill="#"/>
-                <path  d="M123.3,50.227a3.741,3.741,0,0,0-3.081-1.32,4.4,4.4,0,0,0-4.181,4.841V64.53H113.4v-17.6h2.64v2.2a5.941,5.941,0,0,1,5.061-2.42,5.5,5.5,0,0,1,4.181,1.54Z" transform="translate(117.234 37.38)" fill="#"/>
-                <path  d="M127.261,64.869A9.682,9.682,0,0,1,120,62.228l1.76-1.76a7.261,7.261,0,0,0,5.5,1.98c2.861,0,4.621-1.1,4.621-3.081s-.88-2.42-2.861-2.641h-2.861c-3.521-.22-5.281-1.76-5.281-4.841s2.641-5.281,6.6-5.281a9.9,9.9,0,0,1,6.381,1.98l-1.76,1.76a7.482,7.482,0,0,0-4.621-1.32c-2.641,0-3.961,1.1-3.961,2.861s.88,2.42,3.081,2.641h2.861c3.081.22,5.281,1.54,5.281,4.841s-2.861,5.281-7.261,5.281" transform="translate(125.157 37.261)" fill="#"/>
-                <path  d="M70.3,31.484a42.469,42.469,0,0,0-7.922.66V10.8H47.2V74.392H62.383v-19.8c0-4.181.44-5.721,1.54-6.6s2.861-1.32,6.381-1.32,5.281.44,6.381,1.32,1.54,2.42,1.54,6.6v19.8H93.409v-19.8c0-16.723-6.6-23.1-23.1-23.1" transform="translate(37.765 -5.71)" fill="#"/>
-                <path  d="M79.47,33.821a44.672,44.672,0,0,0-.88-5.061,25.085,25.085,0,0,0-6.6-12.322,25.3,25.3,0,0,0-12.322-6.6,67.333,67.333,0,0,0-15.4-1.32,67.773,67.773,0,0,0-15.4,1.32,25.3,25.3,0,0,0-12.322,6.6,25.3,25.3,0,0,0-6.6,12.322,67.553,67.553,0,0,0-1.32,15.4,67.774,67.774,0,0,0,1.32,15.4,25.525,25.525,0,0,0,6.6,12.322,25.3,25.3,0,0,0,12.322,6.6,66.234,66.234,0,0,0,15.4,1.54,66.012,66.012,0,0,0,15.4-1.54l3.961-1.1v2.2c0,15.623-3.961,19.584-19.584,19.584-9.022,0-13.423-.88-16.063-3.521l-2.2-2.42-13.863,9.682a23.324,23.324,0,0,0,3.741,4.621,26.845,26.845,0,0,0,12.762,6.381,68.873,68.873,0,0,0,15.4,1.32,66.453,66.453,0,0,0,15.4-1.54A23.545,23.545,0,0,0,78.149,94.773a44.45,44.45,0,0,0,.88-5.061,208.381,208.381,0,0,0,1.32-28.165,208.386,208.386,0,0,0-.88-27.725M63.626,46.363c-.22,8.582-1.98,13.2-7.041,15.623a31.026,31.026,0,0,1-12.542,1.76c-15.623,0-19.584-3.961-19.584-19.584S28.42,24.579,44.043,24.579,63.626,28.54,63.626,44.163v2.2" transform="translate(-8.587 -8.487)" fill="#"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="header-img" width="259.899" height="106.775" viewBox="0 0 259.899 106.775">
+                <path d="M58.422,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H47.2v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(37.765 37.374)" fill="#fff"/>
+                <path d="M57.1,43.2h2.861v2.861H57.1Zm.22,7.922h2.641v17.6H57.32Z" transform="translate(49.65 33.184)" fill="#fff"/>
+                <path d="M73.542,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H62.1v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(55.652 37.374)" fill="#fff"/>
+                <path d="M74.041,56.382c0,3.961,1.76,6.161,5.281,6.161a5.721,5.721,0,0,0,4.4-1.98l1.76,1.54A8.142,8.142,0,0,1,79.1,64.744c-4.621,0-7.7-2.861-7.7-9.022S74.261,46.7,78.661,46.7s7.261,3.3,7.261,8.582v1.1Zm8.8-4.841a4.621,4.621,0,0,0-8.142,0,7.042,7.042,0,0,0-.66,2.861H83.5a7.261,7.261,0,0,0-.44-2.861" transform="translate(66.816 37.386)" fill="#fff"/>
+                <path d="M96.342,68.725v-11a4.416,4.416,0,1,0-8.8,0v11H84.9V43.2h2.641v9.9A6.381,6.381,0,0,1,92.6,50.9a5.941,5.941,0,0,1,6.381,6.6V68.945Z" transform="translate(83.022 33.184)" fill="#fff"/>
+                <path d="M106.547,62.758a7.481,7.481,0,0,1-10.122,0,9.462,9.462,0,0,1-2.2-7.041,9.462,9.462,0,0,1,2.2-7.041,7.481,7.481,0,0,1,10.122,0,9.462,9.462,0,0,1,2.2,7.041,9.462,9.462,0,0,1-2.2,7.041m-1.76-12.542a4.512,4.512,0,0,0-6.381,0,7.7,7.7,0,0,0-1.54,5.5,7.7,7.7,0,0,0,1.54,5.5,4.512,4.512,0,0,0,6.381,0,7.7,7.7,0,0,0,1.32-5.5,7.7,7.7,0,0,0-1.32-5.5" transform="translate(94.161 37.391)" fill="#fff"/>
+                <path d="M114.755,64.4v-1.98a7.261,7.261,0,0,1-9.682.66,6.6,6.6,0,0,1-1.76-5.061V46.8h2.641v11c0,3.081,1.54,4.621,4.181,4.621a4.181,4.181,0,0,0,4.4-4.621v-11h2.641V64.4Z" transform="translate(105.097 37.506)" fill="#fff"/>
+                <path d="M123.3,50.227a3.741,3.741,0,0,0-3.081-1.32,4.4,4.4,0,0,0-4.181,4.841V64.53H113.4v-17.6h2.64v2.2a5.941,5.941,0,0,1,5.061-2.42,5.5,5.5,0,0,1,4.181,1.54Z" transform="translate(117.234 37.38)" fill="#fff"/>
+                <path d="M127.261,64.869A9.682,9.682,0,0,1,120,62.228l1.76-1.76a7.261,7.261,0,0,0,5.5,1.98c2.861,0,4.621-1.1,4.621-3.081s-.88-2.42-2.861-2.641h-2.861c-3.521-.22-5.281-1.76-5.281-4.841s2.641-5.281,6.6-5.281a9.9,9.9,0,0,1,6.381,1.98l-1.76,1.76a7.482,7.482,0,0,0-4.621-1.32c-2.641,0-3.961,1.1-3.961,2.861s.88,2.42,3.081,2.641h2.861c3.081.22,5.281,1.54,5.281,4.841s-2.861,5.281-7.261,5.281" transform="translate(125.157 37.261)" fill="#fff"/>
+                <path d="M70.3,31.484a42.469,42.469,0,0,0-7.922.66V10.8H47.2V74.392H62.383v-19.8c0-4.181.44-5.721,1.54-6.6s2.861-1.32,6.381-1.32,5.281.44,6.381,1.32,1.54,2.42,1.54,6.6v19.8H93.409v-19.8c0-16.723-6.6-23.1-23.1-23.1" transform="translate(37.765 -5.71)" fill="#fff"/>
+                <path d="M79.47,33.821a44.672,44.672,0,0,0-.88-5.061,25.085,25.085,0,0,0-6.6-12.322,25.3,25.3,0,0,0-12.322-6.6,67.333,67.333,0,0,0-15.4-1.32,67.773,67.773,0,0,0-15.4,1.32,25.3,25.3,0,0,0-12.322,6.6,25.3,25.3,0,0,0-6.6,12.322,67.553,67.553,0,0,0-1.32,15.4,67.774,67.774,0,0,0,1.32,15.4,25.525,25.525,0,0,0,6.6,12.322,25.3,25.3,0,0,0,12.322,6.6,66.234,66.234,0,0,0,15.4,1.54,66.012,66.012,0,0,0,15.4-1.54l3.961-1.1v2.2c0,15.623-3.961,19.584-19.584,19.584-9.022,0-13.423-.88-16.063-3.521l-2.2-2.42-13.863,9.682a23.324,23.324,0,0,0,3.741,4.621,26.845,26.845,0,0,0,12.762,6.381,68.873,68.873,0,0,0,15.4,1.32,66.453,66.453,0,0,0,15.4-1.54A23.545,23.545,0,0,0,78.149,94.773a44.45,44.45,0,0,0,.88-5.061,208.381,208.381,0,0,0,1.32-28.165,208.386,208.386,0,0,0-.88-27.725M63.626,46.363c-.22,8.582-1.98,13.2-7.041,15.623a31.026,31.026,0,0,1-12.542,1.76c-15.623,0-19.584-3.961-19.584-19.584S28.42,24.579,44.043,24.579,63.626,28.54,63.626,44.163v2.2" transform="translate(-8.587 -8.487)" fill="#fff"/>
+              </svg>
         </div>
     </header>
 
     <section class="section" id="section--1">
-        <div class="section__title">
-            <h2 class="section__description">Service</h2>
-            <h3 class="section__header">
+        <div class="section-title">
+            <h2 class="section-description">Service</h2>
+            <h3 class="section-header">
                 Share your inspiring life story and more.
             </h3>
         </div>
 
         <div class="services">
-            <img src="images/digital-lazy.jpg" data-src="images/slider03.jpg" alt="computer" class="services__img lazy-img">
-            <div class="services__service">
-                <div class="services__icon services__icon__1">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/sleep.svg" alt="">
+            <img src="images/digital-lazy.jpg" data-src="images/slider03.jpg" alt="computer" class="services-img lazy-img">
+            <div class="services-service">
+                <div class="services-icon services-icon-1">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/sleep.svg" alt="">
                 </div>
-                <h5 class="services__header">Stay</h5>
+                <h5 class="services-header">Stay</h5>
                 <p>
                     Our hotels are open 24/7 for overnight stays. The locker and capsule areas are completely separated for men and women at the entrance. Before or after checking in, you're welcome to leave your luggage with us to make your stay more convenient. Discount plans are available on a first-come, first-served basis, so be sure to make your bookings early.
                 </p>
             </div>
 
-            <div class="services__service">
-                <div class="services__icon services__icon__2">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/time.svg" alt="">
+            <div class="services-service">
+                <div class="services-icon services-icon-2">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/time.svg" alt="">
                 </div>
-                <h5 class="services__header">Nap</h5>
+                <h5 class="services-header">Nap</h5>
                 <p>
                     Our hotels can also be used for a few hours during the day as a resting place Rates start at 1,000 yen for the first hour plus an additional 500 yen for each hour afterwards. Both beds and showers are available for use. This service can be used as much as you like between the hours of 14:00 and 21:00.
                 </p>
             </div>
-            <img src="images/grow-lazy.jpg" data-src="images/slider04.jpg" alt="" class="services__img lazy-img">
+            <img src="images/grow-lazy.jpg" data-src="images/slider04.jpg" alt="" class="services-img lazy-img">
 
-            <img src="images/ocean-lazy.jpg" data-src="images/slider05.jpg" alt="" class="services__img lazy-img">
-            <div class="services__service">
-                <div class="services__icon services__icon__3">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/shower.svg" alt="">
+            <img src="images/ocean-lazy.jpg" data-src="images/slider05.jpg" alt="" class="services-img lazy-img">
+            <div class="services-service">
+                <div class="services-icon services-icon-3">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/shower.svg" alt="">
                 </div>
-                <h5 class="services__header">Shower</h5>
+                <h5 class="services-header">Shower</h5>
                 <p>
                     We also offer access to only showers, which can be used for up to an hour at a cost of 700 yen. Towels, shampoo, conditioner, body soap, and other amenities are provided, so you’re welcome to come empty-handed. Showers are available 24 hours a day, so feel free to use them to freshen up before or after work or during your long days of sightseeing around the city.
                 </p>
             </div>
         </div>
-        <div class="services m__services">
-            <img src="images/digital-lazy.jpg" data-src="images/slider03.jpg" alt="computer" class="services__img lazy-img">
-            <div class="services__service">
-                <div class="services__icon services__icon__1">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/sleep.svg" alt="">
+        <div class="services m-services">
+            <img src="images/digital-lazy.jpg" data-src="images/slider03.jpg" alt="computer" class="services-img lazy-img">
+            <div class="services-service">
+                <div class="services-icon services-icon-1">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/sleep.svg" alt="">
                 </div>
-                <h5 class="services__header">Stay</h5>
+                <h5 class="services-header">Stay</h5>
                 <p>
                     Our hotels are open 24/7 for overnight stays. The locker and capsule areas are completely separated for men and women at the entrance. Before or after checking in, you're welcome to leave your luggage with us to make your stay more convenient. Discount plans are available on a first-come, first-served basis, so be sure to make your bookings early.
                 </p>
             </div>
 
-            <img src="images/grow-lazy.jpg" data-src="images/slider04.jpg" alt="" class="services__img lazy-img">
-            <div class="services__service">
-                <div class="services__icon services__icon__2">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/time.svg" alt="">
+            <img src="images/grow-lazy.jpg" data-src="images/slider04.jpg" alt="" class="services-img lazy-img">
+            <div class="services-service">
+                <div class="services-icon services-icon-2">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/time.svg" alt="">
                 </div>
-                <h5 class="services__header">Nap</h5>
+                <h5 class="services-header">Nap</h5>
                 <p>
                     Our hotels can also be used for a few hours during the day as a resting place Rates start at 1,000 yen for the first hour plus an additional 500 yen for each hour afterwards. Both beds and showers are available for use. This service can be used as much as you like between the hours of 14:00 and 21:00.
                 </p>
             </div>
 
-            <img src="images/ocean-lazy.jpg" data-src="images/slider05.jpg" alt="" class="services__img lazy-img">
-            <div class="services__service">
-                <div class="services__icon services__icon__3">
-                    <img class="service__icon" src="https://ninehours.co.jp/images/ui/icon/shower.svg" alt="">
+            <img src="images/ocean-lazy.jpg" data-src="images/slider05.jpg" alt="" class="services-img lazy-img">
+            <div class="services-service">
+                <div class="services-icon services-icon-3">
+                    <img class="service-icon" src="https://ninehours.co.jp/images/ui/icon/shower.svg" alt="">
                 </div>
-                <h5 class="services__header">Shower</h5>
+                <h5 class="services-header">Shower</h5>
                 <p>
                     We also offer access to only showers, which can be used for up to an hour at a cost of 700 yen. Towels, shampoo, conditioner, body soap, and other amenities are provided, so you’re welcome to come empty-handed. Showers are available 24 hours a day, so feel free to use them to freshen up before or after work or during your long days of sightseeing around the city.
                 </p>
@@ -175,39 +178,39 @@
     </section>
 
     <section class="section" id="section--2">
-        <div class="section__title">
-            <h2 class="section__description">Our Locations</h2>
-            <h3 class="section__header">
+        <div class="section-title">
+            <h2 class="section-description">Our Locations</h2>
+            <h3 class="section-header">
                 Located in the main city center of Japan.
             </h3>
         </div>
 
         <div class="operations">
-            <div class="operations__tab-container">
-                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+            <div class="operations-tab-container">
+                <button class="btn operations-tab operations-tab--1 operations-tab--active" data-tab="1">
                     <p>Tokyo</p>
                 </button>
-                <button class="btn operations__tab operations__tab--2" data-tab="2">
+                <button class="btn operations-tab operations-tab--2" data-tab="2">
                     <p>Osaka</p>
                 </button>
-                <button class="btn operations__tab operations__tab--3" data-tab="3">
+                <button class="btn operations-tab operations-tab--3" data-tab="3">
                     <p>Nagoya</p>
                 </button>
-                <button class="btn operations__tab operations__tab--4" data-tab="4">
+                <button class="btn operations-tab operations-tab--4" data-tab="4">
                     <p>Fukuoka</p>
                 </button>
-                <button class="btn operations__tab operations__tab--5" data-tab="5">
+                <button class="btn operations-tab operations-tab--5" data-tab="5">
                     <p>Sendai</p>
                 </button>
             </div>
-            <div class="operations__content operations__content--1 operations__content--active">
-                <div class="operations__img operations__img--1">
+            <div class="operations-content operations-content--1 operations-content--active">
+                <div class="operations-img operations-img--1">
                     <img src="images/Tokyo.jpg" alt="">
                 </div>
-                <h5 class="operations__header">
+                <h5 class="operations-header">
                     9hours Tokyo
                 </h5>
-                <p class="operations__paragraph">
+                <p class="operations-paragraph">
                     4-3-14 Akasaka,Minato-ku,Tokyo 107-0052 Japan
                     <br/>
                     Access
@@ -219,14 +222,14 @@
                     TEL <a href="tel:+05018073087">050-1807-3087</a>
                 </p>
             </div>
-            <div class="operations__content operations__content--2">
-                <div class="operations__img operations__img--2">
+            <div class="operations-content operations-content--2">
+                <div class="operations-img operations-img--2">
                     <img src="images/Osaka.jpg" alt="">
                 </div>
-                <h5 class="operations__header">
+                <h5 class="operations-header">
                     9hours Tokyo
                 </h5>
-                <p class="operations__paragraph">
+                <p class="operations-paragraph">
                     NAMBA PARKS Tower 3F 2-10-70 Namba,Naniwa-ku,Osaka 556-0011 Japan
                     <br/>
                     Access
@@ -237,14 +240,14 @@
                     TEL <a href="tel:+0367215963">03-6721-5963</a>
                 </p>
             </div>
-            <div class="operations__content operations__content--3">
-                <div class="operations__img operations__img--3">
+            <div class="operations-content operations-content--3">
+                <div class="operations-img operations-img--3">
                     <img src="images/Nagoya.jpg" alt="">
                 </div>
-                <h5 class="operations__header">
+                <h5 class="operations-header">
                     9hours Nagoya
                 </h5>
-                <p class="operations__paragraph">
+                <p class="operations-paragraph">
                     2-42-2 Meieki,Nakamura-ku,Nagoya 450-0002 Japan
                     <br/>
                     Access
@@ -254,14 +257,14 @@
                     TEL <a href="tel:+05018073340">050-1807-3340</a>
                 </p>
             </div>
-            <div class="operations__content operations__content--4">
-                <div class="operations__img operations__img--4">
+            <div class="operations-content operations-content--4">
+                <div class="operations-img operations-img--4">
                     <img src="images/Fukuoka.jpg" alt="">
                 </div>
-                <h5 class="operations__header">
+                <h5 class="operations-header">
                     9hours Fukuoka
                 </h5>
-                <p class="operations__paragraph">
+                <p class="operations-paragraph">
                     3-22-2 Hakataekimae,Hakata-ku,Fukuoka 812-0011 Japan
                     <br/>
                     Access
@@ -273,14 +276,14 @@
                     TEL <a href="tel:+05018073481">050-1807-3481</a>
                 </p>
             </div>
-            <div class="operations__content operations__content--5">
-                <div class="operations__img operations__img--5">
+            <div class="operations-content operations-content--5">
+                <div class="operations-img operations-img--5">
                     <img src="images/Sendai.jpg" alt="">
                 </div>
-                <h5 class="operations__header">
+                <h5 class="operations-header">
                     9hours Sendai
                 </h5>
-                <p class="operations__paragraph">
+                <p class="operations-paragraph">
                     2-2-8, Kokubuncho, Aoba-ku, Sendai-Shi, Miyagi 980-0803 Japan
                     <br/>
                     Access
@@ -298,9 +301,9 @@
     </section>
 
     <section class="section" id="section--3">
-        <div class="section__title section__title--testimonials">
-            <h2 class="section__description">Customer review</h2>
-            <h3 class="section__header">
+        <div class="section-title section-title--testimonials">
+            <h2 class="section-description">Customer review</h2>
+            <h3 class="section-header">
                 Provide satisfactory service and environment.
             </h3>
         </div>
@@ -308,55 +311,55 @@
         <div class="slider">
             <div class="slide">
                 <div class="testimonial">
-                    <h5 class="testimonial__header">"Modern capsule hotel"</h5>
-                    <blockquote class="testimonial__text">
+                    <h5 class="testimonial-header">"Modern capsule hotel"</h5>
+                    <blockquote class="testimonial-text">
                         Would definitely recommend anyone here for a short stay. Do note you will be charge of 600 yen for the fukouka tax law whrb checking in. Everyday there will be staff to clean the place and you need to be out of away with the given notice time period. The only thing I find inconvenient is that the shower and living quarter are floors different. But they are still separated with the women lift. So all is good still.
                     </blockquote>
-                    <address class="testimonial__author">
-                        <img src="images/user-1.jpg" alt="" class="testimonial__photo">
-                        <h6 class="testimonial__name">John Doe</h6>
-                        <p class="testimonial__location">San Francisco, USA</p>
+                    <address class="testimonial-author">
+                        <img src="images/user-1.jpg" alt="" class="testimonial-photo">
+                        <h6 class="testimonial-name">John Doe</h6>
+                        <p class="testimonial-location">San Francisco, USA</p>
                     </address>
                 </div>
             </div>
 
             <div class="slide">
                 <div class="testimonial">
-                    <h5 class="testimonial__header">"Nice Place!"</h5>
-                    <blockquote class="testimonial__text">
+                    <h5 class="testimonial-header">"Nice Place!"</h5>
+                    <blockquote class="testimonial-text">
                         最新のカプセルホテルに泊まってみたくて今回1人旅で実現させてみました。…結果大感激。  sleep podでは本当に寝るだけ。(+充電) sleepのフロアでは荷物をがさがさしてるひともいません。 こんな荷物が散らからずコンパクトな宿泊体験をしたのは初めてです！ ラウンジにはおしゃれな人がたくさんいました。みんな黙々と読書したりパソコンたたいたり。 若い人が多かったものの年配の方や、同性グループも多かった印象。 寝るだけで宿泊代を抑えたい時にもいいし、雑念はらって思考を整えるのにもいいかも。 男女別なので周りの音もうるさくなくぐっすり寝れちゃいました。朝はみんなのアラームが若干… あといびきとかもなかったのは女性フロアだったからなのかな？(自分がいびきかいてたらどーしよ笑) 車で行ったのですが付近のコインパーキングは夜8時ー朝8時 400円で停められました。</blockquote>
-                    <address class="testimonial__author">
-                        <img src="images/user-2.jpg" alt="" class="testimonial__photo">
-                        <h6 class="testimonial__name">Okimoto Masumi</h6>
-                        <p class="testimonial__location">Tokyo, Japan</p>
+                    <address class="testimonial-author">
+                        <img src="images/user-2.jpg" alt="" class="testimonial-photo">
+                        <h6 class="testimonial-name">Okimoto Masumi</h6>
+                        <p class="testimonial-location">Tokyo, Japan</p>
                     </address>
                 </div>
             </div>
 
             <div class="slide">
                 <div class="testimonial">
-                    <h5 class="testimonial__header">"깔끔하고 조용합니다."</h5>
-                    <blockquote class="testimonial__text">
+                    <h5 class="testimonial-header">"깔끔하고 조용합니다."</h5>
+                    <blockquote class="testimonial-text">
                         일본어를 모르는 입장에서 처음 갔을 때 조금 버벅거리는 부분이 있었으나 하루 숙박을 하고 난 지금은 이 캡슐 호텔의 시스템이 편하고 안전하다고 느낍니다. 남여의 구분 및 욕장, 침실, 사물함, 취식 공간 구분이 확실해서 실용적이고 조용합니다. 샤워실 공간이 일인실로 각각 구분되어 있고 화장실도 여기저기 충분하게 설치되어 있어 불편한 점을 전혀 느끼지 못했습니다. 숙박공간의 공유해야하는 곳이라 시끄러운 것, 위생을 가장 많이 걱정 했었는데 소리 내는 것이 미안할 정도로 조용하고 직원들이 청소를 많이 신경쓰시는지 정말 깨끗했습니다.                    </blockquote>
-                    <address class="testimonial__author">
-                        <img src="images/user-3.jpg" alt="" class="testimonial__photo">
-                        <h6 class="testimonial__name">Kevin Lee</h6>
-                        <p class="testimonial__location">Seoul, Korea</p>
+                    <address class="testimonial-author">
+                        <img src="images/user-3.jpg" alt="" class="testimonial-photo">
+                        <h6 class="testimonial-name">Kevin Lee</h6>
+                        <p class="testimonial-location">Seoul, Korea</p>
                     </address>
                 </div>
             </div>
-            <button class="slider__btn slider__btn--left">&larr;</button>
-            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <button class="slider-btn slider-btn--left">&larr;</button>
+            <button class="slider-btn slider-btn--right">&rarr;</button>
             <div class="dots"></div>
         </div>
     </section>
 
-    <section class="section section__4" id="section--4">
-        <video class="section__video" src="images/video2.mp4" autoplay loop muted preload poster="images/Osaka.jpg"></video>
-        <div class="section__box">
-            <div class="section__title">
-                <h2 class="section__description">Reservation</h2>
-                <h3 class="section__header">
+    <section class="section section-4" id="section--4">
+        <video class="section-video" src="images/video2.mp4" autoplay loop muted preload poster="images/Osaka.jpg"></video>
+        <div class="section-box">
+            <div class="section-title">
+                <h2 class="section-description">Reservation</h2>
+                <h3 class="section-header">
                     Make a reservation for any time you want.
                 </h3>
             </div>
@@ -364,25 +367,98 @@
         </div>
     </section>
 
-    <section class="section section--sign-up">
-        <div class="section__title">
-            <h3 class="section__header">
-                Aute ut nisi dolor officia velit deserunt exercitation do proident esse non nulla enim nisi.
+    <section class="section section--about">
+        <div class="section-title">
+            <h3 class="section-header">
+                About Us
+            </h3>
+            <div class="about-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="514.111" height="160.698" viewBox="0 0 514.111 160.698">
+                    <g transform="translate(-63.117 -1538)">
+                    <path d="M1596.29,235.279h7.39a1.164,1.164,0,0,0,1.161-1.166V222.7c0-2.661.32-3.689.991-4.236.729-.583,1.792-.818,4.058-.818s3.336.235,4.064.818c.672.547.994,1.575.994,4.236v11.414a1.157,1.157,0,0,0,1.158,1.166h7.4a1.158,1.158,0,0,0,1.153-1.166V222.7c0-10.627-4.141-14.761-14.768-14.761a28.848,28.848,0,0,0-5.049.4V196.011a1.163,1.163,0,0,0-1.161-1.161h-7.39a1.16,1.16,0,0,0-1.16,1.161v38.1A1.161,1.161,0,0,0,1596.29,235.279Z" transform="translate(-1047.43 1346.407)"/>
+                    <path d="M1579,234.141a16.045,16.045,0,0,0,7.9,4.157,53.751,53.751,0,0,0,19.7,0,21.511,21.511,0,0,0,2.533-.772c.015.44.015.882.015,1.35,0,9.919-2.479,12.4-12.4,12.4-5.778,0-8.523-.616-10.2-2.222-.2-.189-.409-.4-.6-.6a1.321,1.321,0,0,0-1.713-.227l-6.974,4.814a1.149,1.149,0,0,0-.312,1.613,16.249,16.249,0,0,0,1.81,2.058,17.288,17.288,0,0,0,8.14,4.1,44.116,44.116,0,0,0,9.848.877,42.97,42.97,0,0,0,9.85-.908,15.053,15.053,0,0,0,12.053-12.059,27.516,27.516,0,0,0,.562-3.175,133.038,133.038,0,0,0,.782-17.913,132.958,132.958,0,0,0-.782-17.908,27.367,27.367,0,0,0-.562-3.178,15.055,15.055,0,0,0-12.053-12.056,53.6,53.6,0,0,0-19.7,0,15.063,15.063,0,0,0-12.053,12.056,53.909,53.909,0,0,0,0,19.7A16.028,16.028,0,0,0,1579,234.141ZM1596.744,204c9.919,0,12.4,2.48,12.4,12.393,0,.468,0,.918-.015,1.347-.146,5.532-1.268,8.469-4.425,9.891-1.866.846-4.443,1.163-7.958,1.163-9.917,0-12.394-2.482-12.394-12.4S1586.828,204,1596.744,204Z" transform="translate(-1080.416 1344.424)"/>
+                    <path d="M1464.517,214.782h6.917a1.166,1.166,0,0,0,1.163-1.155V203.2h25.155l-23.7,55.821a.772.772,0,0,0,.71,1.069h8.288a1.737,1.737,0,0,0,1.611-1.069l23.008-54.2a5.688,5.688,0,0,0,.45-2.214v-7.483a1.155,1.155,0,0,0-1.156-1.158h-42.446a1.159,1.159,0,0,0-1.158,1.158v18.5A1.16,1.16,0,0,0,1464.517,214.782Z" transform="translate(-1252.517 1345.029)"/>
+                    <path d="M1415.89,215.64a1.131,1.131,0,0,0,1.588-.054l9-8.993v52.286a1.154,1.154,0,0,0,1.158,1.15h6.9a1.156,1.156,0,0,0,1.163-1.15V195.133a1.159,1.159,0,0,0-1.163-1.153h-7.311a2.794,2.794,0,0,0-1.979.813l-14.28,14.262a1.161,1.161,0,0,0-.018,1.631C1412.2,211.936,1414.6,214.349,1415.89,215.64Z" transform="translate(-1334.604 1345.053)"/>
+                    <path d="M1450.817,200.569v13.37h-13.365a1.161,1.161,0,0,0-1.157,1.163V222a1.154,1.154,0,0,0,1.157,1.158h13.365v13.37a1.158,1.158,0,0,0,1.166,1.153h6.9a1.151,1.151,0,0,0,1.153-1.153v-13.37H1473.4a1.16,1.16,0,0,0,1.16-1.163v-6.9a1.159,1.159,0,0,0-1.16-1.15h-13.362v-13.37a1.155,1.155,0,0,0-1.158-1.155h-6.9A1.159,1.159,0,0,0,1450.817,200.569Z" transform="translate(-1294.642 1353.51)"/>
+                    <path d="M.452,0H37.807a.453.453,0,0,1,.453.453V8.767a.45.45,0,0,1-.45.45H.451A.451.451,0,0,1,0,8.766V.452A.452.452,0,0,1,.452,0Z" transform="translate(417.993 1558.225)"/>
+                    <path d="M.452,0H37.807a.453.453,0,0,1,.453.453V8.771a.453.453,0,0,1-.453.453H.451A.451.451,0,0,1,0,8.773V.452A.452.452,0,0,1,.452,0Z" transform="translate(417.993 1576.664)"/>
+                    <path d="M1523.836,215.64a1.131,1.131,0,0,0,1.587-.054l8.994-8.993v52.286a1.155,1.155,0,0,0,1.158,1.15h6.907a1.155,1.155,0,0,0,1.156-1.15V195.133a1.157,1.157,0,0,0-1.156-1.153h-7.314a2.794,2.794,0,0,0-1.978.813L1518.9,209.055a1.157,1.157,0,0,0-.007,1.631C1520.144,211.936,1522.55,214.349,1523.836,215.64Z" transform="translate(-1166.6 1345.053)"/>
+                    <path d="M1466.654,241.734c-.023.182-.077.542-.077.542,0-.02-.028.281-.028.281,0-.02-.034.261-.034.261l-.059.547-.026.286c0-.02-.023.284-.023.284l-.059.872c0-.036-.01.3-.01.3,0-.056-.013.25-.013.25l-.028.821c-.008.095-.013.941-.013.941l.005,1.225c0,.028.036,1.2.036,1.2l.043.877c0-.031.013.286.013.286.016.13.074.831.074.831.012.151.053.547.053.547l.1.749c.018.128.041.345.041.345,0-.015.048.266.048.266,0-.028.043.24.043.24l.105.509.115.463c.028.156.125.5.125.5.026.077.141.452.141.452a2.082,2.082,0,0,0,.069.23c0-.015.082.22.087.23l.064.179c.01.01.184.432.184.432l.082.189c.01.01.189.383.194.4l.184.337c.01.01.151.243.151.243.069.107.189.289.189.289.092.141.156.222.156.222.1.146.179.238.179.238a2.238,2.238,0,0,0,.164.2c0,.013.171.2.171.2l.281.291.184.171c.092.092.164.156.164.156l.3.248c.01.015.228.174.228.174.092.059.273.194.273.194.125.087.332.2.332.2l.264.159c.141.074.437.228.452.233l.4.181c.043.02.209.09.209.09s.279.118.289.118l.307.112c.033.013.243.084.243.084.092.026.455.138.455.138.02,0,.475.123.475.123.021.008.486.11.486.11.023,0,.747.148.747.148l.552.087c.064.01.787.1.787.1l.57.061c.108.01.739.056.739.056.1.015.869.064.869.064.087,0,.529.01.529.01.153,0,.94.026.94.026.095,0,.706.015.706.015l1.2-.015c.107,0,.88-.023.88-.023.163,0,.887-.026.887-.026l.833-.054c.038-.008.578-.054.578-.054l.526-.056c.08-.013.821-.107.821-.107.123-.015.486-.079.486-.079.189-.02.8-.146.8-.146.026-.01.491-.113.491-.113.169-.049.47-.13.47-.13.087-.028.449-.138.449-.138.026,0,.238-.071.238-.071l.263-.092c.01-.013.388-.158.388-.158a1.921,1.921,0,0,0,.2-.082c.12-.051.381-.176.381-.176l.329-.174c.075-.031.23-.123.23-.123l.353-.212c.151-.1.33-.227.33-.227.141-.1.268-.2.268-.2.138-.107.309-.248.309-.248.016-.018.174-.159.174-.159.1-.1.233-.23.233-.23l.227-.228c.064-.072.146-.179.146-.179l.169-.192c.084-.112.166-.21.166-.21.115-.156.243-.342.243-.342.01-.018.174-.268.174-.268a1.647,1.647,0,0,0,.118-.2c.013-.01.146-.258.146-.258.087-.156.169-.325.169-.325l.087-.192c-.008.02.1-.207.1-.217l.156-.384.087-.233c-.005.023.084-.22.084-.22,0-.023.138-.414.138-.414,0-.026.138-.506.138-.506l.11-.463c.026-.092.113-.493.113-.493l.1-.514.082-.529c.015-.1.071-.54.071-.54.01-.049.09-.833.09-.833.018-.153.087-.972.087-.972,0-.158.033-.716.033-.716.011-.158.031-.869.031-.869,0-.158.017-.9.017-.9v-1.2c0-.125-.028-1.184-.028-1.184l-.031-.892c-.008-.018-.061-.836-.061-.836,0-.041-.049-.588-.049-.588,0,.023-.036-.276-.036-.276.01.044-.017-.24-.017-.24l-.092-.726c-.015-.11-.1-.626-.1-.626l-.1-.511c-.005-.046-.107-.491-.107-.491-.018-.107-.059-.258-.059-.258,0-.023-.194-.69-.194-.69,0-.021-.143-.455-.143-.455,0,.015-.079-.222-.079-.222l-.072-.2c-.041-.087-.179-.417-.179-.417l-.191-.417c-.072-.148-.19-.366-.19-.366l-.13-.22c0-.015-.156-.258-.156-.258a1.45,1.45,0,0,0-.115-.184l-.122-.176c0-.015-.133-.184-.133-.184-.112-.138-.153-.194-.153-.194-.1-.13-.144-.181-.144-.181s-.189-.2-.189-.2c-.087-.087-.169-.171-.169-.171-.041-.041-.153-.159-.153-.159-.008-.015-.278-.253-.289-.266l-.112-.1c-.026-.013-.187-.146-.2-.161l-.317-.233-.253-.169c-.115-.074-.432-.261-.432-.261l-.223-.128c-.087-.046-.212-.1-.212-.1-.112-.061-.455-.212-.455-.212-.031-.023-.228-.1-.228-.1l-.409-.146-.21-.087-.437-.13c-.125-.046-.455-.136-.455-.136-.044-.013-.486-.12-.486-.12-.15-.041-.521-.112-.521-.112l-.77-.136-.77-.115-.552-.064-.583-.056c.012,0-.253-.015-.253-.015l-.578-.041c-.169-.015-.846-.041-.846-.041-.036,0-1.189-.033-1.189-.033-.038-.008-.933-.008-.933-.008h-.882c-.034.008-1.2.041-1.2.041l-.843.036c-.033.005-.882.064-.882.064l-.291.031c.017,0-.261.023-.261.023l-.529.059c-.046.005-.81.12-.81.12l-.782.136-.256.056c-.087.015-.486.115-.486.115l-.209.049c-.115.031-.465.13-.465.13-.13.049-.465.148-.465.148-.015,0-.432.164-.432.164l-.406.169-.233.095c-.016.008-.374.184-.384.192l-.286.161-.232.13c-.161.1-.37.245-.37.245-.11.077-.269.2-.269.2-.02.013-.24.179-.24.179l-.176.151c-.02.015-.181.159-.2.169l-.243.243c-.013.008-.174.174-.174.174-.11.118-.156.176-.156.176a1.989,1.989,0,0,1-.159.179l-.247.322-.2.291-.158.24c-.038.066-.151.245-.151.245-.01.023-.194.358-.194.358-.005.015-.194.4-.194.4l-.082.187c-.005.015-.174.414-.174.414-.026.061-.166.45-.166.45.012-.028-.077.233-.077.233.013-.026-.064.212-.064.212-.018.069-.064.212-.064.212l-.071.261c-.015.069-.112.465-.112.465l-.112.517-.095.5C1466.7,241.451,1466.654,241.734,1466.654,241.734Zm1.845,4.535.023-.81c0-.015.064-1.087.064-1.087,0-.018.064-.8.064-.8.007-.125.056-.511.056-.511l.026-.238c0-.026.066-.5.066-.5.015-.087.063-.432.063-.432.01-.028.092-.475.092-.475.005-.031.1-.44.1-.44.015-.082.1-.424.1-.424l.092-.32.021-.077.061-.2.115-.325.074-.2c.069-.166.135-.309.135-.309.069-.148.138-.3.138-.3.067-.143.143-.274.143-.274.074-.151.149-.268.149-.268.079-.133.158-.24.158-.24l.14-.21.2-.253a1.275,1.275,0,0,1,.123-.143c.082-.095.156-.176.156-.176l.291-.281a1.718,1.718,0,0,0,.186-.153l.1-.074c.09-.072.189-.141.189-.141l.166-.115.072-.051c.143-.082.22-.13.22-.13l.164-.095c.145-.074.286-.148.286-.148l.307-.141.327-.141.361-.13.394-.128.3-.079.509-.125c.094-.028.412-.1.412-.1l.68-.112.757-.115c.092-.013.973-.1.973-.1.021,0,.821-.061.821-.061.156,0,.813-.036.813-.036l.562-.023.291-.005.57-.018h.57c.13,0,.895.015.895.015-.036-.005.271.005.271.005-.02,0,.3,0,.3,0l.262.01.823.036c.107.013.3.013.3.013l.764.061c.018,0,1.025.1,1.025.1l.724.1.665.12c.015,0,.449.11.449.11.108.018.438.1.438.1l.266.074.128.033c.159.056.358.12.358.12l.281.1.066.018.3.123.35.161a1.445,1.445,0,0,0,.189.092l.243.148.095.048.284.189.064.038c-.031-.015.266.2.241.176l.064.059c-.016-.015.217.182.21.169l.2.2a2.045,2.045,0,0,1,.156.153c.093.095.141.156.141.156a.982.982,0,0,1,.13.158l.1.125c-.01-.013.187.261.177.245l.161.245c.062.113.133.248.133.248.089.151.156.286.156.286-.005-.018.082.184.079.174l.059.123.115.289.033.072c.053.156.169.491.169.491.015.031.084.235.084.235l.158.608c.021.074.127.573.127.573.008.046.1.5.1.5l.028.2.044.245.079.578c0-.013.023.217.023.217l.08.741c0,.048.051.785.051.785l.015.276c0,.018.036.821.036.821l.023,1.143v1.173c0,.107-.016.854-.016.854v-.005l-.03.854c0-.023-.013.258-.013.258,0-.02-.015.261-.015.261-.01.135-.038.555-.038.555l-.013.23-.08.752c-.013.049-.087.66-.087.66-.031.184-.087.57-.087.57l-.089.463c-.008.072-.095.442-.095.442-.02.074-.043.187-.043.187s-.059.227-.059.227l-.069.235-.044.148-.122.373c.008-.013-.067.2-.067.2l-.059.156-.071.174-.059.146c-.072.169-.141.314-.141.314.005-.018-.1.189-.092.166l-.141.261-.153.256-.069.1c.01-.01-.123.166-.107.153l-.054.061c-.064.095-.135.187-.135.187-.087.1-.125.156-.125.156s-.2.2-.187.187l-.051.061-.13.13-.059.054a2.429,2.429,0,0,0-.215.187l-.059.049-.153.12c-.125.092-.22.148-.22.148-.141.095-.24.164-.24.164-.143.079-.291.174-.291.174-.151.069-.243.12-.243.12l-.33.156a1.92,1.92,0,0,1-.22.082l-.12.059-.271.1-.1.031-.325.1-.184.056-.462.123-.412.095-.692.133c.012,0-.225.038-.225.038-.12.026-.708.1-.708.1.016-.005-.212.031-.212.031l-.539.054c-.082,0-.532.046-.532.046-.166.008-.787.049-.787.049l-.834.036-.582.018-.274.005-1.168.008-.876-.013-1.092-.043c-.1,0-.821-.044-.821-.044l-.8-.061-.526-.054-.238-.036c-.053-.008-.258-.023-.258-.023l-.209-.033-.494-.082c-.077-.021-.66-.136-.66-.136l-.422-.092-.419-.112c.013.01-.289-.09-.279-.09l-.107-.02a1.593,1.593,0,0,0-.248-.087l-.294-.11-.3-.133c-.069-.026-.179-.079-.179-.079-.1-.054-.253-.123-.253-.123-.143-.069-.194-.1-.194-.1-.135-.084-.212-.128-.212-.128l-.166-.1-.049-.041a1.518,1.518,0,0,0-.166-.1l-.238-.176c-.1-.092-.143-.123-.143-.123l-.166-.146c-.059-.056-.14-.138-.14-.138-.125-.13-.174-.189-.174-.189a1.55,1.55,0,0,1-.145-.156c-.036-.041-.123-.148-.123-.148-.072-.09-.13-.174-.13-.174-.038-.051-.112-.164-.112-.164a2.335,2.335,0,0,1-.138-.22c-.074-.113-.107-.169-.107-.169-.064-.11-.107-.2-.107-.2a2.233,2.233,0,0,1-.108-.2c-.071-.151-.146-.314-.146-.314-.077-.166-.14-.325-.14-.325s-.072-.2-.064-.189l-.115-.335c0-.013-.125-.4-.125-.4l-.074-.286-.077-.322c-.01-.036-.092-.422-.092-.422s-.087-.46-.087-.46c0-.031-.084-.481-.084-.481,0-.054-.092-.736-.092-.736l-.023-.248c-.015-.125-.074-.772-.074-.772-.007-.136-.046-.79-.046-.79,0-.028-.031-.573-.031-.573l-.023-.8c0-.018-.018-.936-.018-.936Z" transform="translate(-1247.962 1405.086)"/>
+                    <path d="M1465.033,254.788a1.1,1.1,0,0,0,0,2.2,3.723,3.723,0,0,0,3.72-3.732V237.576a3.722,3.722,0,0,0-3.72-3.72,1.1,1.1,0,0,0,0,2.2,1.519,1.519,0,0,1,1.524,1.516v15.678A1.528,1.528,0,0,1,1465.033,254.788Z" transform="translate(-1251.618 1407.116)"/>
+                    <path d="M1482.124,236.06a1.1,1.1,0,1,0,0-2.2,3.726,3.726,0,0,0-3.719,3.72v15.678a3.727,3.727,0,0,0,3.719,3.732,1.1,1.1,0,1,0,0-2.2,1.528,1.528,0,0,1-1.516-1.534V237.576A1.519,1.519,0,0,1,1482.124,236.06Z" transform="translate(-1229.1 1407.116)"/>
+                    <path d="M1599.756,232.73v15.08h-15.1a1.121,1.121,0,0,0-1.12,1.117,17.326,17.326,0,1,0,17.34-17.322A1.12,1.12,0,0,0,1599.756,232.73Zm2.234,16.2V233.906a15.072,15.072,0,1,1-16.151,16.139h15.041A1.112,1.112,0,0,0,1601.99,248.927Z" transform="translate(-1065.467 1403.612)"/>
+                    <path d="M1410.427,251.428a3.917,3.917,0,0,1,2.909,1.033l1.293-1.276a5.564,5.564,0,0,0-4.144-1.518c-2.776,0-4.463,1.593-4.463,3.919a3.326,3.326,0,0,0,.974,2.549,4.572,4.572,0,0,0,2.533,1.068l1.576.225a2.338,2.338,0,0,1,1.462.562,1.8,1.8,0,0,1,.524,1.388c0,1.294-1.012,2.043-2.756,2.043a4.4,4.4,0,0,1-3.412-1.273l-1.35,1.329a6.031,6.031,0,0,0,4.724,1.764c2.794,0,4.8-1.462,4.8-3.919a3.489,3.489,0,0,0-1.086-2.738,4.436,4.436,0,0,0-2.5-.994l-1.518-.225a2.975,2.975,0,0,1-1.5-.619,1.594,1.594,0,0,1-.5-1.237C1407.991,252.328,1408.852,251.428,1410.427,251.428Z" transform="translate(-1342.455 1431.724)"/>
+                    <path d="M1412.441,257.229a1.856,1.856,0,0,1,1.932-2.081,1.832,1.832,0,0,1,1.913,2.081v5.831h1.912v-6.133a3.152,3.152,0,0,0-3.3-3.484,3.271,3.271,0,0,0-2.457,1.068v-4.8h-1.912v13.35h1.912Z" transform="translate(-1334.742 1431.792)"/>
+                    <path d="M1415.886,252.3a6.769,6.769,0,0,0,0,7.48,3.8,3.8,0,0,0,2.83,1.125,3.843,3.843,0,0,0,2.851-1.125,6.781,6.781,0,0,0,0-7.48,3.853,3.853,0,0,0-2.851-1.125A3.8,3.8,0,0,0,1415.886,252.3Zm4.893,3.732a3.681,3.681,0,0,1-.657,2.6,1.944,1.944,0,0,1-1.406.562,1.907,1.907,0,0,1-1.388-.562,5.5,5.5,0,0,1,0-5.213,1.893,1.893,0,0,1,1.388-.544,1.93,1.93,0,0,1,1.406.544A3.684,3.684,0,0,1,1420.779,256.028Z" transform="translate(-1328.158 1434.065)"/>
+                    <path d="M1422.4,257.909l-1.837-6.694h-2.025l2.944,9.507h1.65l2.211-6.638,2.232,6.638h1.633l2.961-9.507h-2.043l-1.837,6.694-2.194-6.694h-1.481Z" transform="translate(-1322.27 1434.133)"/>
+                    <path d="M1424.541,256.026c0,3.62,1.894,4.875,4.275,4.875a4.469,4.469,0,0,0,3.564-1.48l-1.222-1.145a2.824,2.824,0,0,1-2.3.977c-1.557,0-2.419-1.033-2.419-2.664h6.169v-.844c0-2.7-1.483-4.573-4.031-4.573C1426.136,251.171,1424.541,252.95,1424.541,256.026Zm2.135-2.063a1.99,1.99,0,0,1,1.9-1.2,1.959,1.959,0,0,1,1.874,1.2,3,3,0,0,1,.263,1.293h-4.274A3.012,3.012,0,0,1,1426.676,253.962Z" transform="translate(-1312.934 1434.065)"/>
+                    <path d="M1428.939,251.283v9.5h1.912v-5.775a1.956,1.956,0,0,1,1.894-2.137,1.763,1.763,0,0,1,1.427.637l1.442-1.442a2.938,2.938,0,0,0-2.267-.9,3.163,3.163,0,0,0-2.533,1.143v-1.03Z" transform="translate(-1306.089 1434.065)"/>
+                    <path d="M1468.306,261.421a4.408,4.408,0,0,1-3.413-1.273l-1.352,1.329a6.046,6.046,0,0,0,4.727,1.764c2.794,0,4.8-1.462,4.8-3.919a3.492,3.492,0,0,0-1.089-2.738,4.418,4.418,0,0,0-2.493-.994l-1.519-.225a2.954,2.954,0,0,1-1.5-.619,1.579,1.579,0,0,1-.506-1.237c0-1.181.864-2.081,2.438-2.081a3.922,3.922,0,0,1,2.907,1.033l1.291-1.276a5.556,5.556,0,0,0-4.144-1.518c-2.776,0-4.463,1.593-4.463,3.919a3.317,3.317,0,0,0,.977,2.549,4.578,4.578,0,0,0,2.53,1.068l1.578.225a2.327,2.327,0,0,1,1.462.562,1.8,1.8,0,0,1,.524,1.388C1471.062,260.672,1470.05,261.421,1468.306,261.421Z" transform="translate(-1252.234 1431.724)"/>
+                    <path d="M1468.477,249.711v10.727a2.421,2.421,0,0,0,2.6,2.623h1.181v-1.628h-.844c-.767,0-1.033-.376-1.033-1.107V249.711Z" transform="translate(-1244.552 1431.792)"/>
+                    <path d="M1474.716,251.171c-2.436,0-4.031,1.779-4.031,4.855,0,3.62,1.894,4.875,4.277,4.875a4.461,4.461,0,0,0,3.561-1.48l-1.219-1.145a2.828,2.828,0,0,1-2.3.977c-1.56,0-2.421-1.033-2.421-2.664h6.168v-.844C1478.747,253.045,1477.265,251.171,1474.716,251.171Zm-2.137,4.085a3.009,3.009,0,0,1,.243-1.293,1.986,1.986,0,0,1,1.894-1.2,1.962,1.962,0,0,1,1.877,1.2,3.011,3.011,0,0,1,.261,1.293Z" transform="translate(-1241.116 1434.065)"/>
+                    <path d="M1478.924,251.171c-2.436,0-4.032,1.779-4.032,4.855,0,3.62,1.895,4.875,4.277,4.875a4.463,4.463,0,0,0,3.561-1.48l-1.217-1.145a2.837,2.837,0,0,1-2.306.977c-1.557,0-2.421-1.033-2.421-2.664h6.168v-.844C1482.956,253.045,1481.476,251.171,1478.924,251.171Zm-2.137,4.085a3.052,3.052,0,0,1,.245-1.293,1.986,1.986,0,0,1,1.891-1.2,1.962,1.962,0,0,1,1.877,1.2,3.006,3.006,0,0,1,.261,1.293Z" transform="translate(-1234.566 1434.065)"/>
+                    <path d="M1483.679,251.171a2.93,2.93,0,0,0-2.513,1.125v-1.012h-1.874v13.35h1.915v-4.819a2.951,2.951,0,0,0,2.492,1.086,3.226,3.226,0,0,0,2.3-.844c.959-.954,1.069-2.584,1.069-4.029s-.11-3.06-1.069-4.014A3.289,3.289,0,0,0,1483.679,251.171Zm-.486,8.024c-1.726,0-1.986-1.48-1.986-3.167s.26-3.152,1.986-3.152,1.968,1.462,1.968,3.152S1484.918,259.2,1483.193,259.2Z" transform="translate(-1227.72 1434.065)"/>
+                    <path d="M1528.363,253.612a3.818,3.818,0,0,0-4.141-3.9h-5.177v13.35h2.025v-5.624h2.533l2.81,5.624h2.361l-3.072-5.905A3.5,3.5,0,0,0,1528.363,253.612Zm-4.292,2.1h-3v-4.182h3a2.1,2.1,0,1,1,0,4.182Z" transform="translate(-1165.848 1431.792)"/>
+                    <path d="M1527.857,251.171c-2.439,0-4.031,1.779-4.031,4.855,0,3.62,1.892,4.875,4.274,4.875a4.459,4.459,0,0,0,3.561-1.48l-1.217-1.145a2.834,2.834,0,0,1-2.309.977c-1.554,0-2.418-1.033-2.418-2.664h6.171v-.844C1531.888,253.045,1530.406,251.171,1527.857,251.171Zm-2.14,4.085a3.012,3.012,0,0,1,.245-1.293,1.985,1.985,0,0,1,1.894-1.2,1.962,1.962,0,0,1,1.874,1.2,3.053,3.053,0,0,1,.263,1.293Z" transform="translate(-1158.407 1434.065)"/>
+                    <path d="M1531.9,252.764a3.592,3.592,0,0,1,2.344.693l1.2-1.217a5.213,5.213,0,0,0-3.526-1.069c-1.991,0-3.584,1.048-3.584,2.9,0,1.669,1.033,2.477,2.815,2.625l1.519.133c.917.074,1.275.486,1.275,1.125,0,.9-.92,1.314-2.083,1.314a3.675,3.675,0,0,1-2.735-1l-1.258,1.258a5.224,5.224,0,0,0,3.993,1.368c2.27,0,3.957-1.03,3.957-3.017,0-1.69-1.051-2.533-2.83-2.682l-1.5-.13c-1.014-.095-1.314-.527-1.314-1.089C1530.171,253.27,1530.753,252.764,1531.9,252.764Z" transform="translate(-1152.121 1434.065)"/>
+                    <path d="M1532.825,259.733a2.473,2.473,0,0,0,2.6,2.641h1.143v-1.629h-.785a.967.967,0,0,1-1.05-1.107V254.5h1.835v-1.462h-1.835v-2.886h-1.912v2.886h-1.087V254.5h1.087Z" transform="translate(-1146.092 1432.479)"/>
+                    <path d="M1581.032,249.73a3.806,3.806,0,0,0-3.937,4.07,3.56,3.56,0,0,0,3.484,3.863,3.141,3.141,0,0,0,1.2-.207l-2.868,5.739h2.045l3.037-6.189a7.414,7.414,0,0,0,.992-3.282A3.747,3.747,0,0,0,1581.032,249.73Zm0,6.34a2.336,2.336,0,1,1,2.045-2.308A2.064,2.064,0,0,1,1581.032,256.07Z" transform="translate(-1075.5 1431.822)"/>
+                    <path d="M1583.457,249.711v13.35h1.912v-5.831a1.854,1.854,0,0,1,1.93-2.081,1.832,1.832,0,0,1,1.912,2.081v5.831h1.915v-6.133a3.152,3.152,0,0,0-3.3-3.484,3.264,3.264,0,0,0-2.457,1.068v-4.8Z" transform="translate(-1065.598 1431.792)"/>
+                    <path d="M1591.642,251.171a3.813,3.813,0,0,0-2.832,1.125,6.794,6.794,0,0,0,0,7.48,4.151,4.151,0,0,0,5.683,0,6.768,6.768,0,0,0,0-7.48A3.849,3.849,0,0,0,1591.642,251.171Zm1.409,7.462a1.95,1.95,0,0,1-1.409.562,1.905,1.905,0,0,1-1.388-.562,5.5,5.5,0,0,1,0-5.213,1.891,1.891,0,0,1,1.388-.544,1.937,1.937,0,0,1,1.409.544,5.519,5.519,0,0,1,0,5.213Z" transform="translate(-1059.013 1434.065)"/>
+                    <path d="M1592.021,251.215v6.077a3.484,3.484,0,0,0,.956,2.679,3.291,3.291,0,0,0,2.345.862,3.4,3.4,0,0,0,2.53-1.069v.956h1.877v-9.5h-1.912v5.793a1.894,1.894,0,0,1-1.971,2.119c-1.069,0-1.912-.636-1.912-2.119v-5.793Z" transform="translate(-1052.268 1434.133)"/>
+                    <path d="M1596.478,251.283v9.5h1.912v-5.775a1.956,1.956,0,0,1,1.895-2.137,1.755,1.755,0,0,1,1.424.637l1.445-1.442a2.935,2.935,0,0,0-2.267-.9,3.163,3.163,0,0,0-2.533,1.143v-1.03Z" transform="translate(-1045.332 1434.065)"/>
+                    <path d="M1603.523,259.272a3.689,3.689,0,0,1-2.738-1l-1.255,1.258a5.228,5.228,0,0,0,3.993,1.368c2.27,0,3.957-1.03,3.957-3.017,0-1.69-1.048-2.533-2.83-2.682l-1.5-.13c-1.015-.095-1.314-.527-1.314-1.089,0-.713.583-1.219,1.726-1.219a3.589,3.589,0,0,1,2.344.693l1.2-1.217a5.213,5.213,0,0,0-3.525-1.069c-1.991,0-3.584,1.048-3.584,2.9,0,1.669,1.033,2.477,2.815,2.625l1.518.133c.918.074,1.276.486,1.276,1.125C1605.607,258.858,1604.686,259.272,1603.523,259.272Z" transform="translate(-1040.582 1434.065)"/>
+                    <path d="M1436.891,231.258a1.649,1.649,0,0,0-1.176-.481h-7.81a1.677,1.677,0,0,0-1.182.481l-13.8,13.812a1.673,1.673,0,0,0-.488,1.176v20.382a.691.691,0,0,0,.682.7h6.064a.716.716,0,0,0,.7-.731V249.508c.524-.522,5.407-5.4,6.6-6.6.8.8,2.912,2.9,3.855,3.852a.675.675,0,0,0,.956-.023l10.054-10.049a.689.689,0,0,0,0-.982Zm-6.094,12.856c-.8-.8-2.907-2.907-3.848-3.852a.663.663,0,0,0-.953.018l-7.846,7.838a1.718,1.718,0,0,0-.49,1.194v15.8h-3.024V246.471c.6-.6,12.9-12.892,13.493-13.506h7.365c.444.455,2.275,2.275,3.224,3.231C1437.517,237.4,1431.993,242.922,1430.8,244.114Z" transform="translate(-1331.782 1402.323)"/>
+                    <path d="M1423.015,235.514a.685.685,0,1,0,.959-.084A.672.672,0,0,0,1423.015,235.514Z" transform="translate(-1315.565 1409.312)"/>
+                    <path d="M1423.83,236.206a.69.69,0,0,0,1.058.884.69.69,0,0,0-1.058-.884Z" transform="translate(-1314.281 1410.389)"/>
+                    <path d="M1424.664,236.906a.682.682,0,0,0,.074.964.691.691,0,0,0,.89-1.058A.67.67,0,0,0,1424.664,236.906Z" transform="translate(-1313.001 1411.464)"/>
+                    <path d="M1425.486,237.593a.677.677,0,0,0,.087.966.684.684,0,0,0,.966-.082.7.7,0,0,0-.089-.979A.682.682,0,0,0,1425.486,237.593Z" transform="translate(-1311.716 1412.541)"/>
+                    <path d="M1427.358,239.164a.686.686,0,0,0-1.053-.879.686.686,0,1,0,1.053.879Z" transform="translate(-1310.434 1413.618)"/>
+                    <path d="M1428.185,239.854a.686.686,0,0,0-.089-.966.674.674,0,0,0-.964.087.69.69,0,0,0,.082.969A.683.683,0,0,0,1428.185,239.854Z" transform="translate(-1309.152 1414.693)"/>
+                    <path d="M1423.543,234.537a.686.686,0,1,0,.938-.253A.688.688,0,0,0,1423.543,234.537Z" transform="translate(-1314.633 1407.644)"/>
+                    <path d="M1424.473,235.073a.69.69,0,1,0,.94-.248A.691.691,0,0,0,1424.473,235.073Z" transform="translate(-1313.183 1408.479)"/>
+                    <path d="M1425.406,235.617a.674.674,0,0,0,.251.931.684.684,0,1,0-.251-.931Z" transform="translate(-1311.733 1409.317)"/>
+                    <path d="M1427.522,236.838a.686.686,0,0,0-.248-.936.674.674,0,0,0-.933.251.683.683,0,1,0,1.181.685Z" transform="translate(-1310.281 1410.154)"/>
+                    <path d="M1428.456,237.379a.692.692,0,0,0-.248-.946.69.69,0,0,0-.685,1.2A.682.682,0,0,0,1428.456,237.379Z" transform="translate(-1308.832 1410.991)"/>
+                    <path d="M1423.2,236.379a.676.676,0,0,0-.964-.084.69.69,0,0,0-.089.969.7.7,0,0,0,.971.082A.679.679,0,0,0,1423.2,236.379Z" transform="translate(-1316.908 1410.656)"/>
+                    <path d="M1422.84,238.087a.691.691,0,1,0,.087-.969A.687.687,0,0,0,1422.84,238.087Z" transform="translate(-1315.832 1411.94)"/>
+                    <path d="M1424.5,238.992a.684.684,0,0,0,.085-.966.694.694,0,0,0-.974-.087.689.689,0,0,0,.889,1.053Z" transform="translate(-1314.755 1413.222)"/>
+                    <path d="M1424.311,238.757a.693.693,0,0,0,.884,1.066.693.693,0,0,0-.884-1.066Z" transform="translate(-1313.681 1414.503)"/>
+                    <path d="M1424.909,240.554a.69.69,0,1,0,.088-.966A.693.693,0,0,0,1424.909,240.554Z" transform="translate(-1312.605 1415.786)"/>
+                    <path d="M1425.691,240.416a.686.686,0,0,0,.882,1.051.686.686,0,1,0-.882-1.051Z" transform="translate(-1311.527 1417.07)"/>
+                    <path d="M1421.946,238.016a.691.691,0,0,0-.69-1.2.691.691,0,0,0,.69,1.2Z" transform="translate(-1318.578 1411.589)"/>
+                    <path d="M1422.484,238.944a.687.687,0,1,0-.943-.251A.695.695,0,0,0,1422.484,238.944Z" transform="translate(-1317.741 1413.04)"/>
+                    <path d="M1422.336,238.688a.675.675,0,0,0-.251.938.7.7,0,0,0,.94.25.688.688,0,0,0,.246-.938A.675.675,0,0,0,1422.336,238.688Z" transform="translate(-1316.905 1414.488)"/>
+                    <path d="M1422.617,240.552a.688.688,0,1,0,.255-.933A.689.689,0,0,0,1422.617,240.552Z" transform="translate(-1316.066 1415.94)"/>
+                    <path d="M1423.412,240.549a.688.688,0,1,0,.935.253A.678.678,0,0,0,1423.412,240.549Z" transform="translate(-1315.23 1417.39)"/>
+                    <path d="M1526.248,228.9l-.069.4a.362.362,0,0,0,.291.4l5.509.91a.338.338,0,0,0,.394-.284l.074-.4a.348.348,0,0,0-.287-.4l-5.512-.91A.349.349,0,0,0,1526.248,228.9Z" transform="translate(-1154.75 1398.946)"/>
+                    <path d="M1531.841,231.433a.335.335,0,0,0,.394-.279l.066-.4a.336.336,0,0,0-.281-.4l-5.509-.913a.345.345,0,0,0-.4.274l-.064.424a.326.326,0,0,0,.276.386Z" transform="translate(-1154.959 1400.233)"/>
+                    <path d="M1525.973,230.548l-.067.409a.34.34,0,0,0,.281.391l5.525.918a.343.343,0,0,0,.393-.289l.072-.4a.355.355,0,0,0-.286-.4l-5.514-.91A.344.344,0,0,0,1525.973,230.548Z" transform="translate(-1155.175 1401.52)"/>
+                    <path d="M1525.843,231.372l-.074.414a.343.343,0,0,0,.3.386l5.509.91a.327.327,0,0,0,.394-.271l.073-.409a.35.35,0,0,0-.286-.394l-5.516-.913A.329.329,0,0,0,1525.843,231.372Z" transform="translate(-1155.388 1402.807)"/>
+                    <path d="M1525.708,232.2l-.074.406a.358.358,0,0,0,.289.4l5.519.913a.352.352,0,0,0,.394-.289l.061-.4a.329.329,0,0,0-.286-.394l-5.509-.923A.353.353,0,0,0,1525.708,232.2Z" transform="translate(-1155.598 1404.092)"/>
+                    <path d="M1522.974,247.181a.585.585,0,0,0-.583.677l3.438,21.382a.814.814,0,0,0,.8.683h12.621a.814.814,0,0,0,.8-.683l3.433-21.382a.589.589,0,0,0-.578-.677h-3.888l2.84-17.138a.675.675,0,0,0-.568-.785l-.81-.141a.7.7,0,0,0-.8.568l-2.894,17.5Zm18.032,2.2c-.342,2.14-2.692,16.76-2.947,18.329h-10.241c-.261-1.57-2.607-16.19-2.953-18.329h11.558l-2.546,15.382a.679.679,0,0,0,.567.79l.811.138a.677.677,0,0,0,.785-.575l2.61-15.735Z" transform="translate(-1160.653 1399.727)"/>
+                    <path d="M1515.307,200.569a1.157,1.157,0,0,0-1.161-1.155h-6.9a1.157,1.157,0,0,0-1.153,1.155l0,13.37h-13.362a1.159,1.159,0,0,0-1.158,1.163V222a1.151,1.151,0,0,0,1.158,1.158h13.362l0,13.37a1.151,1.151,0,0,0,1.152,1.153h6.9a1.154,1.154,0,0,0,1.155-1.153v-13.37h13.372a1.16,1.16,0,0,0,1.151-1.163v-6.9a1.159,1.159,0,0,0-1.151-1.15h-13.372Z" transform="translate(-1208.606 1353.51)"/>
+                    </g>
+                </svg>
+            </div>
+            <h3 class="section-sub">
+                Our brand name "nine hours" comes from replacing the 3 basic actions of showering, sleeping, and changing clothes with the amount of time needed for each: 1h + 7h + 1h. By stripping away the unnecessary, we provide only the truly necessary in the highest quality.
             </h3>
         </div>
+        <h2>Want Join Us?</h2>
         <button id="footer--modal" class="btn btn--show-modal ">Creat Account</button>
     </section>
     <footer class="footer">
-        <ul class="footer__nav">
-            <li class="footer__item"><a class="footer__link" href="#">About</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Pricing</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Terms of Use</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Careers</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
-            <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+        <ul class="footer-nav">
+            <li class="footer-item"><a class="footer-link" href="#">About</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Pricing</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Terms of Use</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Blog</a></li>
+            <li class="footer-item"><a class="footer-link" href="#">Contact Us</a></li>
         </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" alt="logo" class="footer__logo" width="259.899" height="106.775" viewBox="0 0 259.899 106.775">
+        <svg xmlns="http://www.w3.org/2000/svg" alt="logo" class="footer-logo" width="259.899" height="106.775" viewBox="0 0 259.899 106.775">
             <path  d="M58.422,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H47.2v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(37.765 37.374)" fill="#fff"/>
             <path  d="M57.1,43.2h2.861v2.861H57.1Zm.22,7.922h2.641v17.6H57.32Z" transform="translate(49.65 33.184)" fill="#fff"/>
             <path  d="M73.542,64.536v-11a4.4,4.4,0,1,0-8.8,0v11H62.1v-17.6h2.641v1.98a6.381,6.381,0,0,1,5.061-2.2,6.161,6.161,0,0,1,4.621,1.54,6.6,6.6,0,0,1,1.76,4.841V64.536Z" transform="translate(55.652 37.374)" fill="#fff"/>
@@ -395,16 +471,16 @@
             <path  d="M70.3,31.484a42.469,42.469,0,0,0-7.922.66V10.8H47.2V74.392H62.383v-19.8c0-4.181.44-5.721,1.54-6.6s2.861-1.32,6.381-1.32,5.281.44,6.381,1.32,1.54,2.42,1.54,6.6v19.8H93.409v-19.8c0-16.723-6.6-23.1-23.1-23.1" transform="translate(37.765 -5.71)" fill="#fff"/>
             <path  d="M79.47,33.821a44.672,44.672,0,0,0-.88-5.061,25.085,25.085,0,0,0-6.6-12.322,25.3,25.3,0,0,0-12.322-6.6,67.333,67.333,0,0,0-15.4-1.32,67.773,67.773,0,0,0-15.4,1.32,25.3,25.3,0,0,0-12.322,6.6,25.3,25.3,0,0,0-6.6,12.322,67.553,67.553,0,0,0-1.32,15.4,67.774,67.774,0,0,0,1.32,15.4,25.525,25.525,0,0,0,6.6,12.322,25.3,25.3,0,0,0,12.322,6.6,66.234,66.234,0,0,0,15.4,1.54,66.012,66.012,0,0,0,15.4-1.54l3.961-1.1v2.2c0,15.623-3.961,19.584-19.584,19.584-9.022,0-13.423-.88-16.063-3.521l-2.2-2.42-13.863,9.682a23.324,23.324,0,0,0,3.741,4.621,26.845,26.845,0,0,0,12.762,6.381,68.873,68.873,0,0,0,15.4,1.32,66.453,66.453,0,0,0,15.4-1.54A23.545,23.545,0,0,0,78.149,94.773a44.45,44.45,0,0,0,.88-5.061,208.381,208.381,0,0,0,1.32-28.165,208.386,208.386,0,0,0-.88-27.725M63.626,46.363c-.22,8.582-1.98,13.2-7.041,15.623a31.026,31.026,0,0,1-12.542,1.76c-15.623,0-19.584-3.961-19.584-19.584S28.42,24.579,44.043,24.579,63.626,28.54,63.626,44.163v2.2" transform="translate(-8.587 -8.487)" fill="#fff"/>
           </svg>
-        <p class="footer__copyright">&copy; Copyright By Leehoyoun<a class="footer__link twitter__link" target="_blank" href="https://twitter.com"></a></p>
+        <p class="footer-copyright">&copy; Copyright By Leehoyoun<a class="footer-link twitter-link" target="_blank" href="https://twitter.com"></a></p>
     </footer>
 
     <div class="modal hidden">
         <button class="btn--close-modal">&times;</button>
-        <h2 class="modal__header">
+        <h2 class="modal-header">
             Open Your account<br>
             in just <span class="highlight">5 minutes</span>
         </h2>
-        <form action="" class="modal__form">
+        <form action="" class="modal-form">
             <div id="login-form">
               <label for="ID">ID:</label>
               <input type="text" id="ID" required>
@@ -412,7 +488,7 @@
               <br>
               <label for="password">Password:</label>
               <input type="password" id="password" required>
-              <a class="btn_password" id="password-visibility-button" onclick="togglePasswordVisibility()"></a>
+              <button type="button" id="password-visibility-button">Show Password</button>
               <p id="password-error-message" class="error-message"></p>
               <br>              
               <!-- secured-page.html로 이동하는 버튼 추가 -->
@@ -421,8 +497,8 @@
           
             <button id="logout-button" onclick="logout()" style="display: none;">로그아웃</button>
           
-            <a class="btn" onclick="login()">Log In &rarr;</a>
-            <a class="btn" href="signup.html" target="_blank">Sign In &rarr;</a>
+            <button class="btn" onclick="login()">Sign-in &rarr;</button>
+            <button class="btn" onclick="location.href='signup.html'" target="_blank">Sign-up &rarr;</button>
         </form>
     </div>
     <div class="overlay hidden"></div>
